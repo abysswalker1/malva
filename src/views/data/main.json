@@ -1,0 +1,487 @@
+{
+  "headerIcons": [
+    {
+      "svg": "chat",
+      "href": "#",
+      "messages": ""
+    },
+    {
+      "svg": "favs",
+      "href": "#",
+      "messages": "3"
+    },
+    {
+      "svg": "account",
+      "href": "#",
+      "messages": ""
+    },
+    {
+      "svg": "basket",
+      "href": "#",
+      "messages": "18"
+    }
+  ],
+  "pageLinksNotFound": [
+    {
+      "id": "main",
+      "title": "Главная"
+    },
+    {
+      "id": "not-found",
+      "title": "404"
+    }
+  ],
+  "reasons": [
+    {
+      "id": "1",
+      "title": "День рождения"
+    },
+    {
+      "id": "2",
+      "title": "Годовщина"
+    },
+    {
+      "id": "3",
+      "title": "Новый год, Рождество"
+    },
+    {
+      "id": "4",
+      "title": "23 февраля"
+    },
+    {
+      "id": "5",
+      "title": "14 февраля"
+    },
+    {
+      "id": "6",
+      "title": "8 марта"
+    },
+    {
+      "id": "7",
+      "title": "9 мая"
+    },
+    {
+      "id": "8",
+      "title": "1 сентября, выпускной"
+    },
+    {
+      "id": "9",
+      "title": "День матери"
+    },
+    {
+      "id": "10",
+      "title": "Юбилей"
+    },
+    {
+      "id": "11",
+      "title": "Пасха"
+    },
+    {
+      "id": "12",
+      "title": "Свидание"
+    },
+    {
+      "id": "13",
+      "title": "Выписка из роддома"
+    }
+  ],
+  "images" : [
+    {
+      "src": "/img/content/content_img_1.jpg"
+    },
+    {
+      "src": "/img/content/content_img_2.jpg"
+    },
+    {
+      "src": "/img/content/content_img_3.jpg"
+    },
+    {
+      "src": "/img/content/content_img_4.jpg"
+    },
+    {
+      "src": "/img/content/content_img_5.jpg"
+    },
+    {
+      "src": "/img/content/content_img_6.jpg"
+    },
+    {
+      "src": "/img/content/content_img_7.jpg"
+    },
+    {
+      "src": "/img/content/content_img_8.jpg"
+    }
+  ],
+  "productsInt": [
+    {
+      "id": "",
+      "title": "Букет",
+      "rating": "4,5",
+      "price": "3800",
+      "description": "lorem ipsum dolor sit amet, consectet",
+      "marker": {
+        "text": "Новинка",
+        "color": "#00A7B5"
+      }
+    },
+    {
+      "id": "",
+      "title": "Букет",
+      "rating": "4,5",
+      "price": "3800",
+      "description": "lorem ipsum dolor sit amet, consectet",
+      "marker": {
+        "text": "Акция",
+        "color": "#A96D8E"
+      }
+    },
+    {
+      "id": "",
+      "title": "Букет",
+      "rating": "4,5",
+      "price": "3800",
+      "description": "lorem ipsum dolor sit amet, consectet",
+      "marker": {
+        "text": "Хит",
+        "color": "#8164CD"
+      }
+    }
+  ],
+  "productsIntMobile": [
+    {
+    "id": "",
+    "title": "Букет",
+    "rating": "4,5",
+    "price": "3800",
+    "description": "lorem ipsum dolor sit amet, consectet",
+    "marker": {
+      "text": "Новинка",
+      "color": "#00A7B5"
+    }
+  },
+  {
+    "id": "",
+    "title": "Букет",
+    "rating": "4,5",
+    "price": "3800",
+    "description": "lorem ipsum dolor sit amet, consectet",
+    "marker": {
+      "text": "Акция",
+      "color": "#A96D8E"
+    }
+  }
+  ],
+  "productsFavs": [
+    {
+      "id": "",
+      "title": "Букет",
+      "rating": "4,5",
+      "price": "3800",
+      "description": "lorem ipsum dolor sit amet, consectet",
+      "notEnable": true
+    },
+    {
+      "id": "",
+      "title": "Букет",
+      "rating": "4,5",
+      "price": "3800",
+      "description": "lorem ipsum dolor sit amet, consectet",
+      "notEnable": true
+    },
+    {
+      "id": "",
+      "title": "Букет",
+      "rating": "4,5",
+      "price": "3800",
+      "description": "lorem ipsum dolor sit amet, consectet"
+    },
+    {
+      "id": "",
+      "title": "Букет",
+      "rating": "4,5",
+      "price": "3800",
+      "description": "lorem ipsum dolor sit amet, consectet"
+    },
+    {
+      "id": "",
+      "title": "Букет",
+      "rating": "4,5",
+      "price": "3800",
+      "description": "lorem ipsum dolor sit amet, consectet"
+    },
+    {
+      "id": "",
+      "title": "Букет",
+      "rating": "4,5",
+      "price": "3800",
+      "description": "lorem ipsum dolor sit amet, consectet"
+    },
+    {
+      "id": "",
+      "title": "Букет",
+      "rating": "4,5",
+      "price": "3800",
+      "description": "lorem ipsum dolor sit amet, consectet"
+    },
+    {
+      "id": "",
+      "title": "Букет",
+      "rating": "4,5",
+      "price": "3800",
+      "description": "lorem ipsum dolor sit amet, consectet"
+    }
+  ],
+  "order": [
+    {
+      "title": "Общая сумма",
+      "summ": "7 670 ₽"
+    },
+    {
+      "title": "Сумма скидки",
+      "summ": "-550 ₽"
+    },
+    {
+      "title": "Итоговая сумма",
+      "summ": "7 120 ₽"
+    }
+  ],
+  "basketList": [
+    {
+      "name": "Букет «Доброе утро»",
+      "image": "https://place-hold.it/110x110",
+      "quantity": "",
+      "price": "4 640 ₽",
+      "sale": ""
+    },
+    {
+      "name": "Букет «Доброе утро»",
+      "image": "https://place-hold.it/110x110",
+      "quantity": "",
+      "price": "4 640",
+      "sale": "820 ₽"
+    },
+    {
+      "name": "Букет «Доброе утро»",
+      "image": "https://place-hold.it/110x110",
+      "quantity": "3",
+      "price": "4 640",
+      "sale": "400"
+    },
+    {
+      "name": "Букет «Доброе утро»",
+      "image": "https://place-hold.it/110x110",
+      "quantity": "2",
+      "price": "4 640",
+      "sale": ""
+    },
+    {
+      "name": "Букет «Доброе утро»",
+      "image": "https://place-hold.it/110x110",
+      "quantity": "",
+      "price": "4 640",
+      "sale": "820"
+    }
+  ],
+  "footerLinks" : 
+    {
+    "information" : [
+        {
+          "href": "#",
+          "name": "Адреса магазинов"
+        },
+        {
+          "href": "#",
+          "name": "Акции"
+        },
+        {
+          "href": "#",
+          "name": "Отзывы о нас"
+        },
+        {
+          "href": "#",
+          "name": " Оплата"
+        },
+        {
+          "href": "#",
+          "name": "Доставка"
+        },
+        {
+          "href": "#",
+          "name":"Обмен и возврат"
+        },
+        {
+          "href": "#",
+          "name": "Публичная оферта"
+        },
+        {
+          "href": "#",
+          "name": "Обратная связь"
+        }
+      ],
+    "catalog": [
+      {
+        "href": "#",
+        "name": "Цветы"
+      },
+      {
+        "href": "#",
+        "name": "Букеты"
+      },
+      {
+        "href": "#",
+        "name": "Композиции"
+      },
+      {
+        "href": "#",
+        "name": " Для свадьбы"
+      },
+      {
+        "href": "#",
+        "name": "Игрушки"
+      },
+      {
+        "href": "#",
+        "name":"Шары"
+      },
+      {
+        "href": "#",
+        "name": "Открытки"
+      },
+      {
+        "href": "#",
+        "name": "Конфеты"
+      }
+    ]
+  },
+  "bonuses": [
+    {
+      "number": "№ 123456",
+      "date": "28 апреля 2022",
+      "price": "1 640 ₽",
+      "quantity": "+ 50 бонусов"
+    },
+    {
+      "number": "№ 123456",
+      "date": "28 апреля 2022",
+      "price": "1 640 ₽",
+      "quantity": "+ 50 бонусов"
+    },
+    {
+      "number": "№ 123456",
+      "date": "28 апреля 2022",
+      "price": "1 640 ₽",
+      "quantity": "+ 50 бонусов"
+    },
+    {
+      "number": "№ 123456",
+      "date": "28 апреля 2022",
+      "price": "1 640 ₽",
+      "quantity": "+ 50 бонусов"
+    }
+  ],
+  "allOrders": [
+    {
+      "number": "№ 123456",
+      "date": "28 апреля 2022",
+      "price": "1 640 ₽"
+    },
+    {
+      "number": "№ 123456",
+      "date": "28 апреля 2022",
+      "price": "1 640 ₽",
+      "inProgress": true,
+      "finished": true
+    },
+    {
+      "number": "№ 123456",
+      "date": "28 апреля 2022",
+      "price": "1 640 ₽",
+      "inProgress": true
+    }
+  ],
+  "team": [
+    {
+      "name": "Юрий",
+      "image": "{{assets}}/img/content/yuri.jpg"
+    },
+    {
+      "name": "Мария",
+      "image": "{{assets}}/img/content/mariya.jpg"
+    },
+    {
+      "name": "Анастасия",
+      "image": "{{assets}}/img/content/anastasiya.jpg"
+    },
+    {
+      "name": "Татьяна ",
+      "image": "{{assets}}/img/content/tatiyana.jpg"
+    },
+    {
+      "name": "[name]",
+      "image": "https://place-hold.it/300x280"
+    },
+    {
+      "name": "[name]",
+      "image": "https://place-hold.it/300x280"
+    },
+    {
+      "name": "[name]",
+      "image": "https://place-hold.it/300x280"
+    },
+    {
+      "name": "[name]",
+      "image": "https://place-hold.it/300x280"
+    }
+  ],
+  "blogList": [
+    {
+      "img": "{{assets}}/img/content/roses.jpg",
+      "title": "Какие розы лучше подарить на день рождения",
+      "date": "Февраль 20, 2022",
+      "views": "237"
+    },
+    {
+      "img": "{{assets}}/img/content/roses.jpg",
+      "title": "ИНТЕРЕСНО О ГВОЗДИКАХ",
+      "date": "Февраль 20, 2022",
+      "views": "237"
+    },
+    {
+      "img": "{{assets}}/img/content/roses.jpg",
+      "title": "ИНТЕРЕСНО О ГВОЗДИКАХ",
+      "date": "Февраль 20, 2022",
+      "views": "237"
+    },
+    {
+      "img": "{{assets}}/img/content/roses.jpg",
+      "title": "КАК УХАЖИВАТЬ ЗА БУКЕТОМ?",
+      "date": "Февраль 20, 2022",
+      "views": "237"
+    },
+    {
+      "img": "{{assets}}/img/content/roses.jpg",
+      "title": "МОЖНО ЛИ ДАРИТЬ ЖЕЛТЫЕ ЦВЕТЫ?",
+      "date": "Февраль 20, 2022",
+      "views": "237"
+    }
+  ],
+  "selectBirthDate": {
+    "days": [
+      {"number":"1"},{"number":"2"},{"number":"3"},{"number":"4"},{"number":"5"},{"number":"6"},
+      {"number":"7"},{"number":"8"},{"number":"9"},{"number":"10"},{"number":"11"},{"number":"12"},
+      {"number":"13"},{"number":"14"},{"number":"15"},{"number":"16"},{"number":"17"},{"number":"18"},
+      {"number":"19"},{"number":"20"},{"number":"21"},{"number":"22"},{"number":"23"},{"number":"24"},
+      {"number":"25"},{"number":"26"},{"number":"27"},{"number":"28"},{"number":"29"},{"number":"30"},
+      {"number":"31"}
+    ],
+    "mounth": [
+      {"name":"январь"},{"name":"февраль"},{"name":"март"},{"name":"апрель"},{"name":"май"},{"name":"июнь"},
+      {"name":"июль"},{"name":"август"},{"name":"сентябрь"},{"name":"октябрь"},{"name":"ноябрь"},{"name":"декабрь"}
+    ],
+    "years": [
+      {"name":"1990"},{"name":"1991"},{"name":"1992"},{"name":"1993"},{"name":"1994"},{"name":"1995"},
+      {"name":"1996"},{"name":"1997"},{"name":"1998"},{"name":"1999"},{"name":"2000"},{"name":"2001"},
+      {"name":"2002"},{"name":"2003"},{"name":"2004"},{"name":"2005"},{"name":"2006"},{"name":"2007"},
+      {"name":"2008"},{"name":"2009"},{"name":"2010"}
+    ]
+  } 
+}

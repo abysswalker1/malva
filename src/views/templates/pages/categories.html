@@ -1,0 +1,29 @@
+{{> head title="categories"}}
+
+<div class="page-wrap">
+  <div class="page-wrap__content">
+    <div class="categories">
+
+      <div class="categories__header">
+        {{> header }}
+      </div>
+
+      {{> pageLinks main.pageLinksNotFound }}
+
+      <div class="categories__content">
+
+        {{> reasons }}
+
+        {{> filter }}
+
+        <div class="categories__products">
+          {{> products context = main.productsFavs}}
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>
+
+{{> footerContent }}
+
+{{> footer }}

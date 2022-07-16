@@ -1,0 +1,53 @@
+<div class="intresting">
+  <h1 class="intresting__title">Вам может быть интересно</h1>
+  <div class="intresting__main">
+    {{> products context = main.productsInt}}
+    <div class="intresting__compilation">
+      <h3 class="intresting__compilation-title">Подборки популярных поводов:</h3>
+      <div class="intresting__compilation-buttons">
+        <button class="intresting__compilation-buttons-item" type="button">
+          <div class="intresting__compilation-buttons-right">
+            <img src="https://place-hold.it/48x45" alt="" class="intresting__compilation-buttons-img">
+            <span class="intresting__compilation-buttons-text">8 марта</span>
+          </div>
+          <svg class="intresting__compilation-buttons-icon">
+            <use href="{{assets}}/img/svg-sprite/sprite.svg#arrow_forward"></use>
+          </svg>
+        </button>
+        <button class="intresting__compilation-buttons-item" type="button">
+          <div class="intresting__compilation-buttons-right">
+            <img src="https://place-hold.it/48x45" alt="" class="intresting__compilation-buttons-img">
+            <span class="intresting__compilation-buttons-text">ТОП 100</span>
+          </div>
+          <svg class="intresting__compilation-buttons-icon">
+            <use href="{{assets}}/img/svg-sprite/sprite.svg#arrow_forward"></use>
+          </svg>
+        </button>
+        <button class="intresting__compilation-buttons-item" type="button">
+          <div class="intresting__compilation-buttons-right">
+            <img src="https://place-hold.it/48x45" alt="" class="intresting__compilation-buttons-img">
+            <span class="intresting__compilation-buttons-text">Хиты продаж</span>
+          </div>
+          <svg class="intresting__compilation-buttons-icon">
+            <use href="{{assets}}/img/svg-sprite/sprite.svg#arrow_forward"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="intresting__compilation-all">
+        <button class="intresting__compilation-all-btn" type="button">
+          <svg class="intresting__compilation-all-icon">
+            <use href="{{assets}}/img/svg-sprite/sprite.svg#lil_white_arrow"></use>
+          </svg>
+        </button>
+        <p class="intresting__compilation-all-text">Смотреть все подборки</p>
+      </div>
+
+    </div>
+  </div>
+
+   {{!-- Мобилка --}}
+   
+    <div class="intresting_mobile">
+      {{> products context = main.productsIntMobile}}
+    </div>
+</div>

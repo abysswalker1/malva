@@ -1,0 +1,30 @@
+.reasons {
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+  &__title {
+    margin-bottom: 30px;
+    font-size: 35px;
+    line-height: 40px;
+    color: #372137;
+    @include semibold();
+  }
+
+  &__list {
+    display: flex;
+    row-gap: 4px;
+    column-gap: 4px;
+    flex-wrap: wrap;
+  }
+
+  &__list-btn {
+    @include reset-button-styles();
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 35px;
+    @include regular();
+    background: var(--green);
+    border-radius: 6px;
+  }
+}

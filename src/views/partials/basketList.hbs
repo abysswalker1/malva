@@ -1,0 +1,42 @@
+<div class="basket-list">
+  {{!-- Шапка таблицы --}}
+  <div class="basket-list__title-wrap"></div>
+  <div class="basket-list__title-wrap">
+    <h3 class="basket-list-title" id="title-name">
+      Название товара
+    </h3>
+  </div>
+  <div class="basket-list__title-wrap">
+    <h3 class="basket-list-title" id="title-quantity">
+      Количество
+    </h3>
+  </div>
+  <div class="basket-list__title-wrap">
+    <h3 class="basket-list-title" id="title-summ">
+      Сумма
+    </h3>
+  </div>
+  <div class="basket-list__title-wrap"></div>
+
+  {{!-- {{#each main.basketList }}
+  <div class="basket-list__img-wrap {{#if @first}}grid-content{{/if}}">
+    <img src={{this.image}} alt="" class="basket-list__img">
+  </div>
+  <div class="basket-list__name-wrap ">{{this.name}}</div>
+  <div class="basket-list__quantity-wrap">
+    <div class="basket-list__quantity">
+      <button class="basket-list__quantity-btn" type="button">
+        <svg class="basket-list__quantity-icon">
+          <use href="{{assets}}/img/svg-sprite/sprite.svg#minus"></use>
+        </svg>
+      </button>
+      <div class="basket-list__quantity-number">1</div>
+      <button class="basket-list__quantity-btn" type="button">
+        <svg class="basket-list__quantity-icon">
+          <use href="{{assets}}/img/svg-sprite/sprite.svg#plus"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  {{/each}}  --}}
+</div>

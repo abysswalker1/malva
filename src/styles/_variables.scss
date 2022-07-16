@@ -1,0 +1,24 @@
+:root {
+  --gradient-purple: linear-gradient(148.67deg, #D67FAE 33.27%, #A96D8E 92.05%);
+  --main-purple: #CEC3EB;
+  --bg: #FEFBFF;
+  --purple: #A96D8E;
+  --dark-purple: #3E0B3D;
+  --dark-purple-titles: #372137;
+  --pink: #E9C1D9;
+  --text-color: #877A87;
+  --border-grey: #D5CFD6;
+  --green: #67969C;
+}
+
+.pink-icon {
+  path {
+    fill: #A96D8E;
+  }
+}
+
+.white-icon {
+  path {
+    fill: #fff;
+  }
+}

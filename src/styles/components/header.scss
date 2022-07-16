@@ -1,0 +1,137 @@
+.header {
+  @include std-container();
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  &__logo {
+    @include reset-button-styles();
+    width: 80px;
+    height: 74px;
+
+    &-img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__pannel {
+    display: flex;
+    align-items: center;
+  }
+
+  &__pannel-phone {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+
+    &-icon {
+      width: 17px;
+      height: 17px;
+      margin-right: 12px;
+    }
+
+    &-text {
+      @include regular();
+      font-size: 16px;
+      line-height: 20px;
+      color: var(--dark-purple-titles);
+    }
+  }
+
+  &__pannel-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 215px;
+
+    &-btn {
+      @include reset-button-styles();
+      position: relative;
+    }
+
+    &-btn-icon {
+      width: 20px;
+      height: 20px;
+    }
+
+    &-btn-messages {
+      min-width: 20px;
+      min-height: 20px;
+      border-radius: 50%;
+      background: var(--purple);
+      color: white;
+      @include semibold();
+      font-size: 11px;
+      line-height: 13px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: -10px;right: -13px;
+      z-index: 2;
+      overflow: hidden;
+    }
+  }
+
+  &__pannel-basket {
+    margin-left: 28px;
+    width: 59px;
+
+    &-text {
+      @include regular();
+      color: var(--dark-purple-titles);
+      font-size: 13px;
+      line-height: 16px;
+    }
+
+    &-balance {
+      @include semibold();
+      color: var(--dark-purple-titles);
+      font-size: 15px;
+      line-height: 22px;
+
+      span {
+        @include regular();
+      }
+    }
+  }
+
+  &__pannel-burger {
+    @include reset-button-styles();
+    margin-left: 50px;
+
+    &-icon {
+      width: 20px;
+      height: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .header__pannel-phone {
+    display: none;
+  }
+
+  .header__pannel-basket {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .header {
+    box-shadow: 0px 9px 20px rgba(63, 11, 61, 0.1);
+    padding: 15px 16px;
+
+    &__pannel-icons {
+      width: 160px;
+    }
+  
+    &__logo {
+      width: 43px;
+      height: 36px;
+    }
+  }
+}

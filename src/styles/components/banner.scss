@@ -1,0 +1,65 @@
+.banner {
+  padding: 20px;
+  border-radius: 4px;
+  height: 80px;
+  display: flex;
+  box-shadow: 0px 0px 10px rgba(169, 109, 142, 0.1);
+  position: relative;
+  overflow: hidden;
+  
+  &__text {
+    max-width: 300px;
+    font-size: 15px;
+    line-height: 22px;
+    color: var(--dark-purple);
+    @include regular();
+
+    &-strong {
+      @include semibold();
+    }
+  }
+
+  &__circle {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    position: relative;
+    top: -4px;
+    border-radius: 50px;
+    background-color: inherit;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__flower {
+    position: absolute;
+    bottom: -8px;
+    right: -10px;
+    width: 80px;
+    height: 60px;
+  }
+}
+
+.delivery-banner {
+  background: #E9C1D9;
+  .banner__circle {
+    box-shadow: 3px 3px 10px rgba(205, 151, 183, 0.5), -3px -3px 10px rgba(237, 209, 226, 0.7);
+  }
+  .banner__circle-icon {
+    width: 60%;
+    height: 60%;
+  }
+}
+
+.sale-banner {
+  background: var(--main-purple);
+  .banner__circle {
+    box-shadow: 3px 3px 10px rgba(176, 161, 214, 0.5), -3px -3px 10px rgba(215, 207, 235, 0.7);
+  }
+  .banner__circle-icon {
+    width: 80%;
+    height: 80%;
+  }
+}

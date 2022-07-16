@@ -1,0 +1,113 @@
+// Fonts
+@mixin headline() {
+  font-family: 'Cormorant Infant', sans-serif;
+  font-weight: 700;
+}
+@mixin bold() {
+  font-family: 'Montserrat-bold', sans-serif;
+  font-weight: 700;
+}
+
+@mixin semibold() {
+  font-family: 'Montserrat-semibold', sans-serif;
+  font-weight: 600;
+}
+
+@mixin regular() {
+  font-family: 'Montserrat-regular', sans-serif;
+  font-weight: 500;
+}
+
+@mixin reset-button-styles() {
+  border: none;
+  border-radius: 0;
+  background: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@mixin std-button($width, $height: 50px, $bg : var(--gradient-purple),$color: #fff) {
+  @include reset-button-styles();
+  width: $width;
+  height: $height;
+  background: $bg;
+  color: $color;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include regular();
+  svg {
+    display: inline;
+    path {
+      fill: white;
+    }
+  }
+  &:hover {
+    background: #A96D8E;
+    
+  }
+  &:active {
+    background: #85546F;
+  }
+}
+
+
+@mixin std-container() {
+  width: 100%;
+  max-width: 1290px + 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+@mixin std-link() {
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--dark-purple);
+  text-decoration: none;
+  @include regular();
+
+  &:hover {
+    text-decoration: underline;
+    color: #85546F;
+  }
+}
+
+@mixin std-input() {
+  width: 100%;
+  padding: 0 20px;
+  font-size: 16px;
+  height: 50px;
+  color: var(--dark-purple);
+  @include regular();
+  border: 1px solid var(--border-grey);
+  border-radius: 6px;
+  background-color: #fff;
+  &:focus {
+    outline: 2px solid #A96D8E;
+  }
+}
+
+@mixin stdScrollbarStyles($trackColor: #A96D8E, $mainColor: rgba(158, 131, 158, 0.3)) {
+  &::-webkit-scrollbar-track {
+    background-color: $mainColor;
+  }
+
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    -webkit-overflow-scrolling: touch;
+    background-color: $mainColor;
+    width: 2px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: $trackColor;
+  }
+}

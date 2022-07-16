@@ -1,0 +1,61 @@
+{{#each this.context}}
+<div class="products-item-wrap">
+  <div class="products-item {{#if notEnable}}products-item_disabled{{/if}}">
+    {{#if marker}} 
+    <div class="products-item__marker" style="background: {{marker.color}}">
+      {{marker.text}}
+    </div>
+    {{/if}}
+    <button class="products-item__btn products-favs-btn">
+      <svg class="products-item__btn-icon" width="20" height="18"> 
+        <use href="{{assets}}/img/svg-sprite/sprite.svg#favs"></use>
+      </svg>
+    </button>
+    <button class="products-item__btn products-basket-btn">
+      <svg class="products-item__btn-icon" width="20" height="22">
+        <use href="{{assets}}/img/svg-sprite/sprite.svg#basket_white"></use>
+      </svg>
+    </button>
+
+    <div class="products-item__img-slider js-img-swiper">
+      <div class="swiper-wrapper">
+        <div class="products-item__img-wrap swiper-slide">
+          <img src='{{assets}}/img/content/content_img_1.jpg' alt="" class="products-item__img">
+        </div>
+        <div class="products-item__img-wrap swiper-slide">
+          <img src='{{assets}}/img/content/content_img_2.jpg' alt="" class="products-item__img">
+        </div>
+        <div class="products-item__img-wrap swiper-slide">
+          <img src='{{assets}}/img/content/content_img_3.jpg' alt="" class="products-item__img">
+        </div>
+        <div class="products-item__img-wrap swiper-slide">
+          <img src='{{assets}}/img/content/content_img_4.jpg' alt="" class="products-item__img">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <p class="products-item__title">{{title}}</p>
+    <p class="products-item__description">{{description}}</p>
+    <div class="products-item__bottom">
+      <span class="products-item__rating">
+        <svg class="products-item__rating-icon"> 
+          <use href='{{assets}}/img/svg-sprite/sprite.svg#star'></use>
+        </svg>
+        {{rating}} / 5
+      </span>
+      <span class="products-item__price">{{price}}₽</span>
+    </div>
+  </div>
+  {{#if notEnable}}
+    <div class="products-item__overlay">
+      <svg class="products-item__overlay-icon">
+        <use href="{{assets}}/img/svg-sprite/sprite.svg#stop"></use>
+      </svg>
+      <p class="products-item__overlay-text">
+        Товар больше недоступен
+      </p>
+    </div>
+  {{/if}}
+</div>
+{{/each}}

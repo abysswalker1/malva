@@ -1,0 +1,21 @@
+.page-links {
+  @include std-container();
+  &__item {
+    @include regular();
+    font-size: 13px;
+    line-height: 20px;
+    color: #9E839E;
+    &:after {
+     content: '/';
+     margin-right: 8px;
+     margin-left: 8px;   
+    }
+    &:last-child {
+      color: #3E0B3D;
+      text-decoration: underline;
+      &:after {
+        content: none;   
+       }
+    }
+  }
+}

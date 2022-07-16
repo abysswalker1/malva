@@ -1,0 +1,55 @@
+.basket {
+  &__header {
+    background: var(--main-purple);
+  }
+
+  &__content {
+    @include std-container();
+    padding-top: 40px;
+  }
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 44px;
+    margin-bottom: 30px;
+
+    &-title {
+      font-size: 35px;
+      line-height: 40px;
+      color: var(--dark-purple-titles);
+      @include semibold();
+    }
+
+    &-button {
+      @include std-button(238px,46px,#fff,var(--dark-purple));
+
+      &-icon {
+        width: 14px;
+        height: 15px;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &__pannel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 120px 495px auto;
+    grid-column-gap: 30px;
+  }
+
+  &__pannel-list {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+
+  &__pannel-right {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+}

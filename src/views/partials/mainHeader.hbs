@@ -1,0 +1,58 @@
+<div class="header">
+  <a href="/" class="header__logo-wrap">
+    <img src="https://place-hold.it/146x35/666" alt="Fan topia logo" class="header__logo">
+  </a>
+
+  <!--  SEARCH  -->
+  <div class="header__search-wrap">
+   {{> searchInput }}
+  </div>
+  <!--  /SEARCH  -->
+
+  <div class="header__main">
+    <!--  PROFILE  -->
+    <div class="header__profile">
+      <button class="header__profile-button" id="profile-dropdown-trigger" type="button">
+        <img src="https://place-hold.it/146x35/666" alt="" class="header__profile-img">
+        <span class="header__profile-name">Kate Lindman</span>
+        <span class="header__profile-down"></span>
+      </button>
+
+      <div class="header__profile-dropdown" id="profile-dropdown">
+        {{> profileDropdown}}
+      </div>
+    </div>
+    <!--  /PROFILE  -->
+
+    <!--  NOTIFICATIONS  -->
+    <button class="header__notifications" type="button">
+      <svg class="header__notifications-icon" viewBox="0 0 16 20">
+        <use href="{{assets}}/img/svg-sprite/sprite.svg#notification"></use>
+      </svg>
+
+      <span class="header__notifications-count">23</span>
+    </button>
+    <!--  /NOTIFICATIONS  -->
+
+    <!--  MESSAGES  -->
+    <button class="header__messages" type="button">
+      <svg class="header__messages-icon" viewBox="0 0 20 20">
+        <use href="{{assets}}/img/svg-sprite/sprite.svg#message"></use>
+      </svg>
+    </button>
+    <!--  /MESSAGES  -->
+  </div>
+
+  <!--  RESPONSIVE SEARCH  -->
+  <button class="header__open-search js-search-modal-toggle" type="button">
+    <svg class="header__open-search-icon" viewBox="0 0 17 14">
+      <use href="{{assets}}/img/svg-sprite/sprite.svg#magnifyer"></use>
+    </svg>
+  </button>
+  <!--  /RESPONSIVE SEARCH  -->
+
+
+  <!--  RESPONSIVE SEARCH MODAL  -->
+  {{> searchModal }}
+  <!--  /RESPONSIVE SEARCH MODAL  -->
+</div>

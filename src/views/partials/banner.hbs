@@ -1,0 +1,27 @@
+{{#if delivery}}
+  <div class="banner delivery-banner">
+    <div class="banner__circle">
+      <svg class="banner__circle-icon" >
+        <use href="{{assets}}/img/svg-sprite/sprite.svg#delivery"></use>
+      </svg>
+    </div>
+    <p class="banner__text">Бесплатная доставка - добавьте еще на 3 896 ₽</p>
+    <svg class="banner__flower" >
+      <use href="{{assets}}/img/svg-sprite/sprite.svg#flower"></use>
+    </svg>
+  </div> 
+{{else}}
+  <div class="banner sale-banner">
+    <div class="banner__circle">
+      <svg class="banner__circle-icon" >
+        <use href="{{assets}}/img/svg-sprite/sprite.svg#lil_flower"></use>
+      </svg>
+    </div>
+    <p class="banner__text">
+      Дополннительная скидка 10% - добавьте еще на 1 547 ₽
+    </p>
+    <svg class="banner__flower" viewBox="0 0 75 72">
+      <use href="{{assets}}/img/svg-sprite/sprite.svg#flower"></use>
+    </svg>
+  </div> 
+{{/if}}

@@ -1,0 +1,227 @@
+<div class="account-personal">
+  <p class="account-personal__text">Вы в любой момент можете обновить вашу учетную запись и внести любые изменения в приведенные ниже данные.</p>
+  <h1 class="account-personal__title">Персональная информация</h1>
+
+  <div class="account-personal__main">
+
+    <label class="account-personal__photo" for="add-photo">
+      <div class="account-personal__photo-circle">
+        <svg class="account-personal__photo-icon">
+          <use href="{{assets}}/img/svg-sprite/sprite.svg#personal"></use>
+        </svg>
+        <button id="add-photo" class="account-personal__photo-overlay" type="button">
+          <svg class="account-personal__photo-icon">
+            <use href="{{assets}}/img/svg-sprite/sprite.svg#photo"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="account-personal__photo-text">
+        Загрузите вашу фотографию
+      </div>
+    </label>
+
+    <div class="account-personal__form">
+      <div class="account-personal__form-row">
+        <label for="" class="account-personal__form-row-item">
+          <p class="account-personal__form-text">Имя *</p>
+          <div class="account-personal__form-input-wrap">
+            <input type="text" class="account-personal__form-input">
+          </div>
+        </label>
+        <label for="" class="account-personal__form-row-item">
+          <p class="account-personal__form-text">Фамилия *</p>
+          <div class="account-personal__form-input-wrap">
+            <input type="text" class="account-personal__form-input">
+          </div>
+        </label>
+      </div>
+      <div class="account-personal__form-row">
+        <label for="" class="account-personal__form-row-item">
+          <p class="account-personal__form-text">Номер телефона *</p>
+          <div class="account-personal__form-input-wrap">
+            <input type="text" class="account-personal__form-input">
+          </div>
+        </label>
+        <label for="" class="account-personal__form-row-item">
+          <p class="account-personal__form-text">E-mail *</p>
+          <div class="account-personal__form-input-wrap">
+            <input type="text" class="account-personal__form-input">
+          </div>
+        </label>
+      </div>
+      <div class="account-personal__form-row">
+        <label for="days" class="account-personal__form-row-item">
+          <p class="account-personal__form-text">Дата рождения <span class="birth-date-span">(дд/мм/гггг)</span></p>
+          <div class="account-personal__form-birth-date-select">
+            <div class="account-personal__form-select-wrap">
+              <select name="select-days" id="days" class="js-standard-select">
+                {{#each main.selectBirthDate.days}}
+                <option value={{this.number}}>{{this.number}}</option>
+                {{/each}}
+              </select>
+            </div>
+            <div class="account-personal__form-select-wrap">
+              <select name="select-mounth" id="month" class="js-standard-select">
+                {{#each main.selectBirthDate.mounth}}
+                <option value={{this.name}}>{{this.name}}</option>
+                {{/each}}
+              </select>
+            </div>
+            <div class="account-personal__form-select-wrap">
+              <select name="select-years" id="years" class="js-standard-select">
+                {{#each main.selectBirthDate.years}}
+                <option value={{this.name}}>{{this.name}}</option>
+                {{/each}}
+              </select>
+            </div>
+          </div>
+        </label>
+        <div class="account-personal__form-btn-wrap">
+          <button class="account-personal__form-btn">
+            Сохранить изменения
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="account-personal__password">
+    <div class="account-personal__password-change">
+      <h1 class="account-personal__title">Изменение пароля</h1>
+      <div class="account-personal__password-change-item">
+        <p class="account-personal__password-text">Текущий пароль</p>
+        <div class="account-personal__password-input-wrap">
+          <input type="password" class="account-personal__password-input">
+        </div>
+      </div>
+      <div class="account-personal__password-change-item">
+        <p class="account-personal__password-text">Новый пароль</p>
+        <div class="account-personal__password-input-wrap">
+          <input type="password" class="account-personal__password-input">
+        </div>
+      </div> 
+      <div class="account-personal__password-change-item">
+        <p class="account-personal__password-text">Подтверждение нового пароля</p>
+        <div class="account-personal__password-input-wrap">
+          <input type="password" class="account-personal__password-input">
+        </div>
+      </div>
+    </div>
+    <div class="account-personal__password-save">
+      <div class="account-personal__password-save-container">
+        <p class="account-personal__password-save-text">
+          Пароль должен содержать не менее восьми символов. Это может быть любая комбинация букв латинского алфавита, цифр и других символов.
+        </p>
+        <button class="account-personal__password-save-btn" type="button">
+          Сохранить изменения
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="account-personal__bonuses">
+  <h1 class="account-personal__title">Мои бонусы</h1>
+  <p class="account-personal__text">История начисления бонусов</p>
+  
+  <div class="account-personal__bonuses-table">
+    <div class="account-personal__bonuses-table-head">
+        <div class="account-personal__bonuses-table-head-item">
+        <p class="account-personal__bonuses-table-text">
+           Номер заказа
+        </p>
+        </div>
+        <div class="account-personal__bonuses-table-head-item">
+        <p class="account-personal__bonuses-table-text">
+          Дата оформления
+        </p>  
+        </div>
+        <div class="account-personal__bonuses-table-head-item">
+        <p class="account-personal__bonuses-table-text">
+          Сумма
+        </p>  
+        <p class="account-personal__bonuses-table-text">
+          Статус
+        </p>  
+        </div>
+      </div>
+      {{#each main.bonuses}}
+      <div class="account-personal__bonuses-table-row">
+        <div class="account-personal__bonuses-table-row-item">
+          <p class="account-personal__bonuses-table-number">
+            {{this.number}}
+          </p>
+        </div>
+        <div class="account-personal__bonuses-table-row-item">
+          <p class="account-personal__bonuses-table-date">
+            {{this.date}}
+          </p>
+        </div>
+        <div class="account-personal__bonuses-table-row-item">
+          <p class="account-personal__bonuses-table-price">
+            {{this.price}}
+          </p>
+          <p class="account-personal__bonuses-table-quantity">
+            {{this.quantity}}
+          </p>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+
+    {{!-- Мобильная таблица --}}
+    <div class="account-personal__bonuses-table_mobile">
+      {{#each main.bonuses}}
+        <div class="account-personal__bonuses-table_mobile-row">
+          <div class="account-personal__bonuses-table_mobile-item">
+            <p class="account-personal__bonuses-table-number">
+              {{this.number}}
+            </p>
+            <p class="account-personal__bonuses-table-price">
+              {{this.price}}
+            </p>
+          </div>
+          <div class="account-personal__bonuses-table_mobile-item">
+            <p class="account-personal__bonuses-table-date">
+              {{this.date}}
+            </p>
+            <p class="account-personal__bonuses-table-quantity">
+              {{this.quantity}}
+            </p>
+          </div>
+          <div class="account-personal__bonuses-table_mobile-item">
+            <p class="account-personal__bonuses-table-info">Подробнее</p>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+    {{!-- .Мобильная таблица --}}
+
+    <div class="account-personal__notification">
+      <div class="account-personal__notification-item">
+        <h1 class="account-personal__notification-title">Настроить уведомления</h1>
+        <p class="account-personal__notification-text">Получение информации о заказе</p>
+        <div class="account-personal__notification-switch-wrap">
+          {{> switch }}
+          <span class="account-personal__notification-switch-text">Мессенджер</span>
+        </div>
+        <div class="account-personal__notification-switch-wrap">
+          {{> switch }}
+          <span class="account-personal__notification-switch-text">Звонок</span>
+        </div>
+        <svg class="account-personal__notification-flower">
+          <use href="{{assets}}/img/svg-sprite/sprite.svg#logo_flower"></use>
+        </svg>
+      </div>
+      <div class="account-personal__notification-item">
+        <h1 class="account-personal__notification-title">Подписка на рассылку</h1>
+        <p class="account-personal__notification-text">Информация о скидках, акциях, новинках</p>
+        <div class="account-personal__notification-switch-wrap">
+          {{> switch }}
+          <span class="account-personal__notification-switch-text">Участвовать в рассылке</span>
+        </div>
+        <svg class="account-personal__notification-flower">
+          <use href="{{assets}}/img/svg-sprite/sprite.svg#logo_flower"></use>
+        </svg>
+      </div>
+    </div>
+
+  </div>
+</div>

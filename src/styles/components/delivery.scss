@@ -1,0 +1,74 @@
+.delivery {
+  background: var(--pink);
+  &__container {
+    position: relative;
+    @include std-container();
+    height: 410px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+
+  &__title {
+    font-size: 60px;
+    line-height: 70px;
+    color: var(--dark-purple-titles);
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    @include headline();
+  }
+
+  &__note {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    &-icon {
+      width: 50px;
+      height: 50px;
+      margin-right: 15px;
+    }
+    &-text {
+      font-size: 30px;
+      line-height: 35px;
+      color: var(--darl-purple);
+      @include semibold();
+    }
+  }
+  &__list {
+    &-item {
+      position: relative;
+      font-size: 20px;
+      line-height: 35px;
+      color: var(--dark-purple);
+      max-width: 680px;
+      padding-left: 15px;
+      margin-bottom: 15px;
+      @include regular();
+      &:before {
+        content: ' ';
+        position: absolute;
+        left: 0;
+        top: 16px;
+        height: 4px;
+        width: 4px;
+        background-color: var(--dark-purple);
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &__woman-wrap {
+    position: absolute;
+    top: 0;
+    bottom: -19px;
+    right: 0;
+    width: 55.9%;
+    display: flex;
+    align-items: flex-end; 
+  }
+
+  &__woman {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}

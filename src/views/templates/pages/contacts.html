@@ -1,0 +1,125 @@
+{{> head title="categories"}}
+
+<div class="page-wrap">
+  <div class="page-wrap__content">
+    <div class="contacts">
+      <div class="contacts__header">
+        {{> header }}
+      </div>
+
+      {{> pageLinks main.pageLinksNotFound }}
+
+      <div class="contacts__content">        
+        <h1 class="contacts__title">Наши контакты</h1>
+        <div class="contacts__main">
+          <div class="contacts__main-socials">
+            <div class="contacts__phone">
+              <h3 class="contacts__subtitle">Единый контактный центр</h3>
+              <div class="contacts__phone-row">
+                <svg class="contacts__phone-icon pink-icon" width="17" height="17"> 
+                  <use href="{{assets}}/img/svg-sprite/sprite.svg#pink_phone"></use>
+                </svg>
+                <div class="contacts__phone-text">
+                  <p class="contacts__phone-text-number">+7 (3182) 60-40-50</p>
+                  <p class="contacts__phone-text-status">Круглосуточно</p>
+                </div>
+                <svg class="contacts__phone-icon" width="17" height="17"> 
+                  <use href="{{assets}}/img/svg-sprite/sprite.svg#call_1"></use>
+                </svg>
+                <svg class="contacts__phone-icon" width="17" height="19"> 
+                  <use href="{{assets}}/img/svg-sprite/sprite.svg#call_2"></use>
+                </svg>
+                <svg class="contacts__phone-icon" width="19" height="19"> 
+                  <use href="{{assets}}/img/svg-sprite/sprite.svg#telegram"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="contacts__phone">
+              <h3 class="contacts__subtitle">Еще один наш телефон для заказов</h3>
+              <div class="contacts__phone-row">
+                <svg class="contacts__phone-icon pink-icon" width="17" height="17"> 
+                  <use href="{{assets}}/img/svg-sprite/sprite.svg#pink_phone"></use>
+                </svg>
+                <div class="contacts__phone-text">
+                  <p class="contacts__phone-text-number">+7 (3182) 60-40-50</p>
+                  <p class="contacts__phone-text-status">Ежедневно с 9:00 до 22:00</p>
+                </div>
+                <svg class="contacts__phone-icon" width="17" height="17"> 
+                  <use href="{{assets}}/img/svg-sprite/sprite.svg#call_1"></use>
+                </svg>
+                <svg class="contacts__phone-icon" width="17" height="19"> 
+                  <use href="{{assets}}/img/svg-sprite/sprite.svg#call_2"></use>
+                </svg>
+                <svg class="contacts__phone-icon" width="19" height="19"> 
+                  <use href="{{assets}}/img/svg-sprite/sprite.svg#telegram"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="contacts__media">
+              <h3 class="contacts__subtitle">Мы в социальных сетях: </h3>
+              <div class="contacts__media-item">
+                <div class="contacts__media-circle">
+                  <svg class="contacts__media-icon" width="50px" height="30px">
+                    <use href="{{assets}}/img/svg-sprite/sprite.svg#vk_big"></use>
+                  </svg>
+                </div>
+                <div class="contacts__media-text">
+                  <p class="contacts__media-text-name">Vk.com</p>
+                  <p class="contacts__media-text-address">Malva_flowers_omsk</p>
+                </div>
+              </div>
+              <div class="contacts__media-item">
+                <div class="contacts__media-circle">
+                  <svg class="contacts__media-icon" width="29px" height="50px">
+                    <use href="{{assets}}/img/svg-sprite/sprite.svg#ok"></use>
+                  </svg>
+                </div>
+                <div class="contacts__media-text">
+                  <p class="contacts__media-text-name">Ok.com</p>
+                  <p class="contacts__media-text-address">Malva_flowers_omsk</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contacts__main-photos">
+            <div class="contacts__slider">
+              <div class="contacts__slider-wrapper swiper-wrapper">
+                <div class="contacts__slider-slide swiper-slide">
+                  <img src="https://place-hold.it/740x440" alt="" class="contacts__slider-img">
+                </div>
+                <div class="contacts__slider-slide swiper-slide">
+                  <img src="https://place-hold.it/740x440" alt="" class="contacts__slider-img">
+                </div>
+                <div class="contacts__slider-slide swiper-slide">
+                  <img src="https://place-hold.it/740x440" alt="" class="contacts__slider-img">
+                </div>
+              </div>
+              <div class="contacts__slider-pagination"></div>
+              <button class="contacts__slider-button contacts-btn-prev">
+                <svg class="contacts__slider-button-icon">
+                  <use href="{{assets}}/img/svg-sprite/sprite.svg#lil_white_arrow"></use>
+                </svg>
+              </button>
+              
+              <button class="contacts__slider-button contacts-btn-next">
+                <svg class="contacts__slider-button-icon">
+                  <use href="{{assets}}/img/svg-sprite/sprite.svg#lil_white_arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>    
+        </div>
+        
+      </div>
+
+      {{> delivery }}
+
+      {{> intresting }}
+    </div>
+  </div>
+</div>
+
+
+{{> footerContent }}
+
+{{> footer}}

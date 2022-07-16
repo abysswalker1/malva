@@ -1,0 +1,49 @@
+{{> head title="basket"}}
+
+<div class="page-wrap">
+  <div class="page-wrap__content">
+    <div class="basket">
+      <div class="basket__header">
+        {{> header }}
+      </div>
+      <div class="basket__content">
+
+        {{> buttonBack text="Продолжить покупки"}}
+
+        <div class="basket__head">
+          <h1 class="basket__head-title">Корзина</h1>
+          <div class="btn-wrap">
+            <button class="basket__head-button" type="button">
+              Очистить корзину
+
+              <svg class="basket__head-button-icon">
+                <use href="{{assets}}/img/svg-sprite/sprite.svg#garbage"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="basket__pannel">
+          {{> banner delivery=true}}
+
+          {{> banner }}
+
+          <div class="basket__pannel-list">
+            {{> basketList }}
+          </div>
+          <div class="basket__pannel-right">
+            {{> createOrder }}
+
+            {{> banner }}
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{{> footerContent }}
+
+{{> footer}}

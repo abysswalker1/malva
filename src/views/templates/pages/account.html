@@ -1,0 +1,81 @@
+{{> head }}
+
+<div class="page-wrap">
+  <div class="page-wrap__content">
+    <div class="account">
+
+      <div class="account__header">
+        {{> header }}
+      </div>
+
+      <div class="account__content">
+        {{> pageLinks main.pageLinksNotFound}}
+
+        <h1 class="account__title">Личный кабинет</h1>
+
+        <div class="account__pannel js-account-main preview">
+
+          <div class="account__pannel-head">
+            <img src="{{assets}}/img/main/account_head_bg.png" alt="" class="account__pannel-head-img">
+          </div>
+
+
+          <div class="account__banner">
+            {{> accountBanner }}
+          </div>
+
+          <div class="account__back-btn">
+            {{> buttonBackMobile text="Назад"}}
+          </div>
+
+          <div class="account__card">
+            <div class="account__card-item preview-card">
+              {{> accountPreview }}
+            </div>
+
+            <div class="account__card-item orders-card">
+              {{> accountOrders }}
+            </div>
+
+            <div class="account__card-item personal-card">
+              {{> accountPersonal }}
+            </div>
+
+            <div class="account__card-item location-card">
+              {{> accountLocation }}
+            </div>
+
+            <div class="account__card-item favs-card">
+              {{> accountFavs }}
+            </div>
+          </div>
+
+          <div class="account__sidebar">
+            <button class="account__sidebar-button js-account-button" data-id="orders" type="button">
+              <p class="account__sidebar-button-text">Заказы</p>
+            </button>
+            <button class="account__sidebar-button js-account-button" data-id="personal" type="button">
+              <p class="account__sidebar-button-text">Личные данные</p>
+            </button>
+            <button class="account__sidebar-button js-account-button" data-id="favs" type="button">
+              <p class="account__sidebar-button-text">Избранное</p>
+            </button>
+            <button class="account__sidebar-button js-account-button" data-id="location" type="button">
+              <p class="account__sidebar-button-text">Адреса</p>
+            </button>
+            <button class="account__sidebar-button js-account-button" data-id="preview" type="button">
+              <p class="account__sidebar-button-text">Выйти</p>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+{{> footer }}
+
+{{> footerContent }}

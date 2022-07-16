@@ -1,0 +1,7 @@
+.account-favs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-template-rows: repeat(auto-fit, 280px);
+  grid-gap: 25px;
+  overflow-y: scroll;
+}

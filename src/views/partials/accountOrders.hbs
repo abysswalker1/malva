@@ -1,0 +1,119 @@
+<div class="account-orders js-account-orders current">
+  <div class="account-orders__head">
+    <button class="account-orders__head-btn js-account-orders-btn" data-id="current" type="button">
+      Текущие заказы
+    </button>
+    <button class="account-orders__head-btn js-account-orders-btn" data-id="all" type="button">
+      Все заказы
+    </button>
+  </div>
+
+  <div class="account-orders__current">
+    <p class="account-orders__text">
+      lorem ipsum dolor sit amet, consectetur
+    </p>
+    <button class="account-orders__current-button" type="button">
+      <span class="account-orders__current-button-text">Посмотреть все товары</span>
+      <svg class="account-orders__current-button-icon">
+        <use href="{{assets}}/img/svg-sprite/sprite.svg#lil_white_arrow"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="account-orders__all">
+    <p class="account-orders__text">
+      lorem ipsum dolor sit amet, consectetur
+    </p>
+    <div class="account-orders__table">
+      <div class="account-orders__table-head">
+        <div class="account-orders__table-head-item">
+        <p class="account-orders__table-text">
+           Номер заказа
+        </p>
+        </div>
+        <div class="account-orders__table-head-item">
+        <p class="account-orders__table-text">
+          Дата оформления
+        </p>  
+        </div>
+        <div class="account-orders__table-head-item">
+        <p class="account-orders__table-text">
+          Сумма
+        </p>  
+        </div>
+        <div class="account-orders__table-head-item">
+        <p class="account-orders__table-text">
+          Статус
+        </p>  
+        </div>
+      </div>
+      {{#each main.allOrders}}
+      <div class="account-orders__table-row">
+        <div class="account-orders__table-row-item">
+          <p class="account-orders__table-number">
+            {{this.number}}
+          </p>
+        </div>
+        <div class="account-orders__table-row-item">
+          <p class="account-orders__table-date">
+            {{this.date}}
+          </p>
+        </div>
+        <div class="account-orders__table-row-item">
+          <p class="account-orders__table-price">
+            {{this.price}}
+          </p>
+        </div>
+        <div class="account-orders__table-row-item">
+          {{#unless this.inProgress}}
+          <p class="account-orders__table-status not-ready">
+            Оформляется
+          </p>
+          {{else}}
+          <p class="account-orders__table-status {{#if this.finished}}finished{{else}}in-progress{{/if}}">
+          {{#if this.finished}}Доставленно{{else}}Ждет отправки{{/if}}  
+          </p>
+          {{/unless}}
+          <p class="account-orders__table-info">
+            Подробнее
+          </p>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+
+    {{!-- Мобильная таблица --}}
+    <div class="account-orders__table_mobile">
+      {{#each main.allOrders}}
+        <div class="account-orders__table_mobile-row">
+          <div class="account-orders__table_mobile-item">
+            <p class="account-orders__table-number">
+              {{this.number}}
+            </p>
+            <p class="account-orders__table-price">
+              {{this.price}}
+            </p>
+          </div>
+          <div class="account-orders__table_mobile-item">
+            <p class="account-orders__table-date">
+              {{this.date}}
+            </p>
+            {{#unless this.inProgress}}
+              <p class="account-orders__table-status not-ready">
+                Оформляется
+              </p>
+              {{else}}
+              <p class="account-orders__table-status {{#if this.finished}}finished{{else}}in-progress{{/if}}">
+              {{#if this.finished}}Доставленно{{else}}Ждет отправки{{/if}}  
+              </p>
+            {{/unless}}
+          </div>
+          <div class="account-orders__table_mobile-item">
+            <p class="account-orders__table-info">Подробнее</p>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+    {{!-- .Мобильная таблица --}}
+  </div>
+</div>

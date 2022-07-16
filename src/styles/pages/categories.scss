@@ -1,0 +1,21 @@
+.categories {
+
+  &__header {
+    background: #CEC3EB;
+    margin-bottom: 40px;
+  }
+
+  &__content {
+    @include std-container();
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;  
+  }
+
+  &__products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(380px, 1fr));
+    grid-gap: 25px;
+  }
+}

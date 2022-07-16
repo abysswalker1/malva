@@ -1,0 +1,29 @@
+.button-back-mob {
+  display: flex;
+  align-items: center;
+  &__circle {
+    background: var(--gradient-purple);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    margin-right: 15px;
+  }
+  &__btn {
+    @include std-button(46px, 46px, #fff);
+    border-radius: 50%;
+  }
+  &__icon {
+    width: 14px;
+    height: 14px;
+    transform: rotate(180deg);
+  }
+  &__text {
+    font-size: 16px;
+    color: var(--dark-purple);
+    @include regular();
+  }
+}

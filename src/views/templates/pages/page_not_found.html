@@ -1,0 +1,49 @@
+{{> head title="main"}}
+
+<div class="page-wrap">
+  <div class="page-wrap__content">
+    <div class="not-found">
+      <div class="not-found__header">
+        {{> header }}
+    
+        <!-- <div class="not-found__header-flower">
+          <svg class="not-found__header-flower-img">
+            <use href="{{assets}}/img/svg-sprite/sprite.svg#logo_flower"></use>
+          </svg>
+        </div> -->
+      </div>
+    
+      <div class="not-found__view">
+        
+        {{> pageLinks main.pageLinksNotFound }}
+
+        <div class="not-found__main-wrap">
+          <div class="not-found__main">
+            <div class="not-found__main-note">
+              <span class="not-found__main-note-number">4</span>
+              <div class="not-found__main-note-img-wrap">
+                <img src="{{assets}}/img/main/404_not_found.jpg" alt=""class="not-found__main-note-img">
+              </div>
+              <span class="not-found__main-note-number">4</span>
+            </div>
+            <h1 class="not-found__main-title">
+              Страницы с таким адресом не существует  ;(
+            </h1>
+            <p class="not-found__main-text">
+              Возможно мы удалили ее, или вы перешли по неверному адресу
+            </p>
+            <button class="not-found__main-btn">
+              Вернуться на Главную
+    
+              <svg class="not-found__main-btn-icon">
+                <use href="{{assets}}/img/svg-sprites/sprite.svg#arrow-white"></use>
+              </svg>
+            </button>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{> footer }}

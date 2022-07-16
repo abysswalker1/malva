@@ -1,0 +1,32 @@
+<div class="create-order">
+  <h1 class="create-order__title">Итого:</h1>
+  <div class="create-order__check">
+    {{#each main.order}}
+    <div class="create-order__check-item">
+      <span class="create-order__check-item-text">{{this.title}}</span>
+      <div class="create-order__check-item-string"></div>
+      <span class="create-order__check-item-text">{{this.summ}}</span>
+    </div>
+    {{/each}}
+  </div>
+  <div class="create-order__options">
+    <div class="create-order__options-switch">
+      {{> switch }}
+      <span class="create-order__options-switch-text">Промокод</span>
+    </div>
+    <div class="create-order__options-switch">
+      {{> switch }}
+      <span class="create-order__options-switch-text">Бонусные баллы</span>
+    </div>
+  </div>
+  <div class="create-order__buttons">
+    <button class="create-order__buttons-create">
+      Оформить заказ
+    </button>
+    <div class="btn-wrap">
+      <button class="create-order__buttons-authorizing">
+        Авторизоваться
+      </button>
+    </div>
+  </div>
+</div>

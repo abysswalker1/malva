@@ -1,0 +1,15 @@
+.button-back {
+  @include reset-button-styles();
+  display: flex;
+  align-items: center;
+  color: var(--dark-purple);
+  font-size: 16px;
+  line-height: 22px;
+  @include regular();
+
+  &__string {
+    width: 30px;
+    height: 12px;
+    margin-right: 21px;
+  }
+}

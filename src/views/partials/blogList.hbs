@@ -1,0 +1,22 @@
+<div class="blog-list">
+  {{#each main.blogList}}
+  <a class="blog-list__item" href="#">
+    <img src="../assets/img/content/roses.jpg" alt="" class="blog-list__item-img">
+    <h1 class="blog-list__item-title">{{this.title}}</h1>
+    <div class="blog-list__item-text-wrap">
+      <div class="blog-list__item-text">
+        <svg class="blog-list__item-text-icon blog-clock" width="14.8" height="14.8">
+          <use href="{{assets}}/img/svg-sprite/sprite.svg#clock-minimal"></use>
+        </svg>
+        {{this.date}}
+      </div>
+      <div class="blog-list__item-text">
+        <svg class="blog-list__item-text-icon blog-eye" width="15" height="12">
+          <use href="{{assets}}/img/svg-sprite/sprite.svg#eye"></use>
+        </svg>
+        {{this.views}}
+      </div>
+    </div>
+  </a>
+  {{/each}}
+</div>

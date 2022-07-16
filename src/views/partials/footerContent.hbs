@@ -1,0 +1,149 @@
+<div class="footer">
+  <div class="pre-footer">
+    <div class="pre-footer__container">
+
+      <svg class="pre-footer__logo">
+        <use href="{{assets}}/img/svg-sprite/sprite.svg#logo"></use>
+      </svg>
+
+      <div class="pre-footer__information">
+        <h1 class="pre-footer__title">Информация</h1>
+        {{#each main.footerLinks.information}}
+        <a class="pre-footer__link" href={{this.href}}>{{this.name}}</a>
+        {{/each}}
+      </div>
+
+      <div class="pre-footer__catalog">
+        <h1 class="pre-footer__title">Каталог</h1>
+        <div class="pre-footer__catalog-wrap">
+          <div class="pre-footer__section">
+            {{#each main.footerLinks.catalog}}
+            <a class="pre-footer__link" href={{this.href}}>{{this.name}}</a>
+            {{/each}}
+          </div>
+          <div class="pre-footer__section">
+            {{#each main.footerLinks.information}}
+            <a class="pre-footer__link" href={{this.href}}>{{this.name}}</a>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+
+      <div class="pre-footer__contacts">
+        <h1 class="pre-footer__title">Контакты</h1>
+        <div class="pre-footer__contacts-item">
+          <div class="pre-footer__contacts-icon-wrap">
+            <svg class="pre-footer__contacts-icon" width="14" height="14">
+            <use href="{{assets}}/img/svg-sprite/sprite.svg#phone_contacts"></use>
+          </svg>
+          </div>
+          <div class="pre-footer__contacts-text-wrap">
+            <p class="pre-footer__contacts-text">+7 (900) 000-00-00</p>
+            <p class="pre-footer__contacts-text">+7 (3812) 60-40-50</p>
+          </div>
+          <div class="pre-footer__contacts-call-wrap">
+            <svg class="pre-footer__contacts-call">
+              <use href="{{assets}}/img/svg-sprite/sprite.svg#call_1"></use>
+            </svg>
+            <svg class="pre-footer__contacts-call">
+              <use href="{{assets}}/img/svg-sprite/sprite.svg#call_2"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="pre-footer__contacts-item">
+          <div class="pre-footer__contacts-icon-wrap">
+            <svg class="pre-footer__contacts-icon" width="14" height="14">
+            <use href="{{assets}}/img/svg-sprite/sprite.svg#location"></use>
+          </svg>
+          </div>
+          <div class="pre-footer__contacts-text-wrap">
+            <p class="pre-footer__contacts-text">ул. 24 Северная, 145 корпус 8, г. Омск</p>
+          </div>
+        </div>
+        <div class="pre-footer__contacts-item">
+          <div class="pre-footer__contacts-icon-wrap">
+            <svg class="pre-footer__contacts-icon" width="14" height="14">
+            <use href="{{assets}}/img/svg-sprite/sprite.svg#mail"></use>
+          </svg>
+          </div>
+          <div class="pre-footer__contacts-text-wrap">
+            <p class="pre-footer__contacts-text">info@mail.ru</p>
+          </div>
+        </div>
+        <div class="pre-footer__buttons">
+
+          {{!-- Кнопки VK и тд. --}}
+          <button class="pre-footer__buttons-item" type="button">
+            <svg class="pre-footer__buttons-icon" width="20" height="12">
+              <use href="{{assets}}/img/svg-sprite/sprite.svg#vk"></use>
+            </svg>
+          </button>
+          <button class="pre-footer__buttons-item" type="button">
+            <svg class="pre-footer__buttons-icon" width="21" height="22">
+              <use href="{{assets}}/img/svg-sprite/sprite.svg#call_1"></use>
+            </svg>
+          </button>
+          <button class="pre-footer__buttons-item" type="button">
+            <svg class="pre-footer__buttons-icon" width="20" height="20">
+              <use href="{{assets}}/img/svg-sprite/sprite.svg#call_2"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{!-- Мобильные списки --}}
+
+  <div class="pre-footer__mobile js-footerLinks-item">
+    <div class="pre-footer__mobile-container">
+      <div class="pre-footer__mobile-head js-footerLinks-btn-trigger">
+        <h1 class="pre-footer__title">Каталог</h1>
+        <button class="pre-footer__mobile-btn">
+          <svg class="pre-footer__mobile-icon">
+            <use href="{{assets}}/img/svg-sprite/sprite.svg#arrow_down"></use>
+          </svg> 
+        </button>
+      </div>
+      <div class="pre-footer__mobile-list">
+        {{#each main.footerLinks.catalog}}
+        <a class="pre-footer__link" href={{this.href}}>{{this.name}}</a>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+
+  <div class="pre-footer__mobile js-footerLinks-item">
+    <div class="pre-footer__mobile-container">
+      <div class="pre-footer__mobile-head js-footerLinks-btn-trigger">
+        <h1 class="pre-footer__title">Информация</h1>
+        <button class="pre-footer__mobile-btn">
+          <svg class="pre-footer__mobile-icon">
+            <use href="{{assets}}/img/svg-sprite/sprite.svg#arrow_down"></use>
+          </svg> 
+        </button>
+      </div>
+      <div class="pre-footer__mobile-list">
+        {{#each main.footerLinks.information}}
+        <a class="pre-footer__link" href={{this.href}}>{{this.name}}</a>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+
+  {{!-- /Мобильные списки --}}
+
+  <div class="footer-bottom">
+    <div class="footer-bottom__container">
+      <div class="footer-bottom__left">
+        <span class="footer-bottom__text">© Мальва, 2022</span>
+        <span class="footer-bottom__text">Политика Конфиденциальности</span>
+        <span class="footer-bottom__text">Пользовательское соглашение</span>
+      </div>
+      <div class="footer-bottom__right">
+        <span class="footer-bottom__text">Создание и продвижение</span>
+        <img src="{{assets}}/img/images/main/studio_logo.png" alt="" class="footer-bottom__logo" >
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,222 @@
+.account-orders {
+  &__head {
+    border-bottom: 1px solid #C7A8BB; 
+    display: flex;
+    margin-bottom: 20px;
+
+    &-btn {
+      @include reset-button-styles();
+      height: 55px;
+      width: 215px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      font-size: 14px;
+      color: var(--dark-purple);
+      @include bold();
+      position: relative;
+      &.active {
+        &:before {
+          content: " ";
+          position: absolute;
+          bottom: 0;left: 0;right: 0;
+          height: 4px;
+          background: var(--gradient-purple);
+        }
+      }
+    }
+  }
+
+  &__text {
+    color: #877A87;
+    font-size: 15px;
+    line-height: 23px;
+    @include regular();
+    margin-bottom: 30px;
+    min-height: 46px;
+  }
+
+  &__current {
+    display: none;
+  
+    &-button {
+      @include std-button(286px);
+  
+      &-icon {
+        width: 12px;
+        height: 12px;
+        margin-left: 10px;
+        transform: translateY(1px);
+      }
+  
+      &-text {
+        font-size: 15px;
+        line-height: 50px;
+      }
+    }
+  }
+
+  &__all {
+    display: none;
+  }
+
+  &.current {
+    .account-orders__current {
+      display: block;
+    }
+  }
+  &.all {
+    .account-orders__all {
+      display: block;
+    }
+  }
+
+  &__table {
+
+    &_mobile {
+      display: none;
+    }
+
+    &-text {
+      color: #877A87;
+      font-size: 13px;
+      line-height: 30px;
+      @include regular();
+    }
+
+    &-head {
+      padding: 0 20px;
+      display: flex;
+      border-top: 1px solid var(--border-grey);
+      border-bottom: 1px solid var(--border-grey);
+
+      &-item {
+        text-align: center;
+        flex: 1;
+        &:first-child {
+          text-align: left;
+        }
+        &:nth-child(3) {
+          text-align: right;
+        }
+        &:last-child {
+          text-align: right;
+          flex: 2;
+          p {
+            width: 50%;
+          }
+        }
+      }
+    }
+
+    &-row {
+      display: flex;
+      width: 100%;
+      padding: 0 20px;
+      border-radius: 6px;
+      &:hover {
+        box-shadow: 0px 0px 10px rgba(62, 11, 61, 0.1);
+        transition: box-shadow 1.5ms ease;
+      }
+      &-item {
+        flex: 1;
+        height: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:first-child {
+          justify-content: flex-start;
+        }
+        &:nth-child(3) {
+          justify-content: flex-end;
+        }
+        &:last-child {
+          justify-content: space-between;
+          flex: 2;
+        }
+      }
+    }
+
+    &-number {
+      font-size: 15px;
+      line-height: 26px;
+      color: var(--dark-purple);
+      @include regular();
+    }
+
+    &-status {
+      flex: 1;
+      text-align: right;
+      font-size: 15px;
+      line-height: 26px;
+      @include regular();
+      &.not-ready {
+        color: #877A87;
+      }
+      &.finished {
+        color: #67969C;
+      }
+      &.in-progress {
+        color: var(--dark-purple);
+      }
+    }
+
+    &-date {
+      font-size: 15px;
+      line-height: 26px;
+      color: #877A87;
+      @include regular();
+    }
+
+    &-price {
+      font-size: 15px;
+      line-height: 26px;
+      color: var(--dark-purple);
+      @include regular();
+    }
+
+    &-info {
+      flex: 1;
+      text-align: right;
+      color: #A96D8E;
+      font-size: 16px;
+      line-height: 26px;
+      @include regular();
+      text-decoration: underline;
+      cursor: pointer;
+      &:hover {
+        color: #85546F;
+      } 
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .account-orders {
+    &__table {
+      display: none;
+    }
+
+    &__table_mobile {
+      display: block;
+
+      &-row {
+        padding: 20px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #C7A8BB;
+        &:last-child {
+          margin-top: 0;
+        }
+      }
+
+      &-item {
+        display: flex;
+        justify-content: space-between;
+        &:last-child {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}
