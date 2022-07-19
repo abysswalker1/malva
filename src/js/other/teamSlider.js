@@ -6,11 +6,11 @@ import Swiper, { Pagination, Navigation } from 'swiper';
     modules: [Pagination, Navigation],
     direction: 'horizontal',
     slidesPerView: 4,
-    spaceBetween: 30,
+    spaceBetween: 20,
     loop: false,
     navigation : {
-      nextEl: '.team-slider-next',
-      prevEl: '.team-slider-prev'
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
     },
 
     // If we need pagination

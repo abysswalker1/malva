@@ -1,5 +1,5 @@
 {{#each this.context}}
-<div class="products-item-wrap">
+<div class="products-item-wrap {{#if this.slide}}swiper-slide{{/if}}">
   <div class="products-item {{#if notEnable}}products-item_disabled{{/if}}">
     {{#if marker}} 
     <div class="products-item__marker" style="background: {{marker.color}}">

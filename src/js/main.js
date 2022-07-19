@@ -12,6 +12,7 @@ require('./components/accountOrdersChange');
 require('./components/accountPageSwitch');
 require('./components/imgSlider');
 require('./components/contactsSlider');
+require('./components/mainSlider');
 
 require('./other/select');
 require('./other/teamSlider');

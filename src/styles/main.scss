@@ -30,9 +30,11 @@
 @import './components/teamSlider';
 @import './components/intresting';
 @import './components/filter';
+@import './components/presents';
 
 
 // Pages
+@import './pages/main';
 @import './pages/pageNotFound';
 @import './pages/categories';
 @import './pages/basket';

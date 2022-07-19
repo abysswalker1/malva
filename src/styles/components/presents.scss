@@ -1,0 +1,77 @@
+.presents {
+  height: 465px;
+  padding-top: 50px;
+  background: url("../img/main/bg_pink.jpg")
+            center center no-repeat;
+  background-size: cover;   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 450px;
+  &__container {
+    @include std-container();
+    overflow: hidden;
+  }
+  &__title {
+    font-size: 60px;
+    line-height: 70px;
+    text-transform: uppercase;
+    text-align: center;
+    @include headline();
+    margin-bottom: 55px;
+  }
+
+  &__head {
+    display: flex;
+    border-bottom: 2px solid #C7A8BB;
+    &-item {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 41px;
+      font-size: 15px;
+      line-height: 23px;
+      @include regular();
+      text-transform: uppercase;
+      position: relative;
+      &.presents-head-active {
+        &:before {
+          content: ' ';
+          position: absolute;
+          bottom: -2px;
+          right: 0;
+          left: 0;
+          height: 4px;
+          background: var(--gradient-purple);
+        }
+      }
+    }
+  }
+
+  &__slider {
+    min-width: 0;
+    margin: 0 auto;
+    &-container {
+      @include std-container();
+      max-width: 1440px;
+      height: 320px;
+      overflow: hidden;
+      position: relative;
+      top: 30px;
+      padding: 0;
+    }
+    &.swiper-wrapper {
+      order: 2;
+    }
+    &.swiper-navigation {
+      display: flex;
+      justify-content: space-between;
+    }
+    &.team-slider-prev {
+      &:first-child {
+        order: 1;
+      }
+    }
+  }
+}

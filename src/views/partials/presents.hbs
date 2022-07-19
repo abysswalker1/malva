@@ -1,0 +1,21 @@
+<div class="presents">
+  <div class="presents__container">
+    <h1 class="presents__title">Добавьте подарок и очаруйте получателя</h1>
+    <div class="presents__head">
+      <div class="presents__head-item presents-head-active">Мягкие игрушки</div>
+      <div class="presents__head-item">Конфеты</div>
+      <div class="presents__head-item">Шары</div>
+      <div class="presents__head-item">Открытки</div>
+      <div class="presents__head-item">ТОпперы</div>
+    </div>
+  </div>
+  <div class="presents__slider-container">
+    <div class="presents__slider js-swiper">
+      <div class="swiper-wrapper">
+        {{> products context = main.productsBears }}
+      </div>
+      <button class="presents__slider-btn team-slider-prev">1</button>
+      <button class="presents__slider-btn team-slider-next">2</button>
+    </div>
+  </div>
+</div>
