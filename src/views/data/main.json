@@ -347,6 +347,113 @@
       }
     }
   ],
+  "productsMain": [
+    {
+      "id": "",
+      "title": "Букет",
+      "rating": "4,5",
+      "price": "3800",
+      "description": "lorem ipsum dolor sit amet, consectet",
+      "notEnable": true
+    },
+    {
+      "id": "",
+      "title": "Букет",
+      "rating": "4,5",
+      "price": "3800",
+      "description": "lorem ipsum dolor sit amet, consectet",
+      "notEnable": true
+    },
+    {
+      "id": "",
+      "title": "Букет",
+      "rating": "4,5",
+      "price": "3800",
+      "description": "lorem ipsum dolor sit amet, consectet",
+      "marker": {
+        "text": "Хит",
+        "color": "#8164CD"
+      }
+    },
+    {
+      "id": "",
+      "title": "Букет",
+      "rating": "4,5",
+      "price": "3800",
+      "description": "lorem ipsum dolor sit amet, consectet",
+      "marker": {
+        "text": "Новинка",
+        "color": "#00A7B5"
+      }
+    },
+    {
+      "id": "",
+      "title": "Букет",
+      "rating": "4,5",
+      "price": "3800",
+      "description": "lorem ipsum dolor sit amet, consectet",
+      "marker": {
+        "text": "Акция",
+        "color": "#A96D8E"
+      }
+    },
+    {
+      "id": "",
+      "title": "Букет",
+      "rating": "4,5",
+      "price": "3800",
+      "description": "lorem ipsum dolor sit amet, consectet",
+      "marker": {
+        "text": "Хит",
+        "color": "#8164CD"
+      }
+    },
+    {
+      "id": "",
+      "title": "Букет",
+      "rating": "4,5",
+      "price": "3800",
+      "description": "lorem ipsum dolor sit amet, consectet",
+      "marker": {
+        "text": "Акция",
+        "color": "#A96D8E"
+      }
+    },
+    {
+      "id": "",
+      "title": "Букет",
+      "rating": "4,5",
+      "price": "3800",
+      "description": "lorem ipsum dolor sit amet, consectet",
+      "slide": true,
+      "marker": {
+        "text": "Новинка",
+        "color": "#00A7B5"
+      }
+    },
+    {
+      "id": "",
+      "title": "Букет",
+      "rating": "4,5",
+      "price": "3800",
+      "description": "lorem ipsum dolor sit amet, consectet",
+      "marker": {
+        "text": "Новинка",
+        "color": "#00A7B5"
+      }
+    },
+    {
+      "id": "",
+      "title": "Букет",
+      "rating": "4,5",
+      "price": "3800",
+      "description": "lorem ipsum dolor sit amet, consectet",
+      "marker": {
+        "text": "Акция",
+        "color": "#A96D8E"
+      }
+    }
+  ],
   "order": [
     {
       "title": "Общая сумма",
