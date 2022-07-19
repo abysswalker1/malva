@@ -17,33 +17,33 @@ if (production) {
 
 
 const paths = {
-  dist: './dist/',
+  dist: './public/',
   views: {
     src: './src/views/templates/**/*.html',
     pages: './src/views/templates/',
     partials: './src/views/partials/',
     helpers: './src/views/helpers/',
     data: './src/views/data',
-    dist: './dist/',
+    dist: './public/',
     watch: './src/views/**/*.{html,hbs}',
   },
   styles: {
     src: './src/styles/*.{scss,sass}',
-    dist: './dist/assets/styles/',
+    dist: './public/assets/styles/',
     watch: './src/styles/**/*.{scss,sass}',
   },
   fonts: {
     src: './src/fonts/**/*.{woff,woff2,eot,ttf,svg}',
-    dist: './dist/assets/fonts/',
+    dist: './public/assets/fonts/',
     watch: './src/fonts/**/*.{woff,woff2,eot,ttf,svg}',
   },
   favicons: {
     src: "./src/img/favicon/*.{jpg,jpeg,png,gif}",
-    dist: "./dist/assets/img/favicons/",
+    dist: "./public/assets/img/favicons/",
   },
   sprites: {
     src: "./src/img/svg-sprite/*.svg",
-    dist: "./dist/assets/img/svg-sprite/",
+    dist: "./public/assets/img/svg-sprite/",
     watch: "./src/img/svg-sprite/*.svg"
   },
   images: {
@@ -52,22 +52,22 @@ const paths = {
       '!./src/img/favicon/*',
       '!./src/img/svg-sprite/*',
     ],
-    dist: './dist/assets/img/',
+    dist: './public/assets/img/',
     watch: './src/img/**/*.{jpg,jpeg,png,gif,svg,tiff}',
   },
   scripts: {
     src: './src/js/main.js',
-    dist: './dist/assets/js/',
+    dist: './public/assets/js/',
     srcOther: './src/js/other/*.js',
-    distOther: './dist/assets/js/other/',
+    distOther: './public/assets/js/other/',
     watch: './src/js/**/*.js',
   },
   vendors: {
     src: './src/vendors/**/*.*',
-    dist: './dist/assets/vendors/'
+    dist: './public/assets/vendors/'
   },
   assets: {
-    dist: './dist/assets/',
+    dist: './public/assets/',
   },
 };
 
