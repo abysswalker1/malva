@@ -688,6 +688,168 @@
       "views": "237"
     }
   ],
+  "recenseList": [
+    {
+      "name": "Ирина В.",
+      "avatar": "/img/content/author.png",
+      "rating": false,
+      "text": "Первый раз делала заказ! Все отлично! Доставили во время! Букет шикарен! Шарики тоже! Сестрёнка в восторге! Спасибо за сервис! Буду заказывать ещё! Всем советую ",
+      "photos": [
+        {
+          "img": "/img/content/recense_flower_1.png"
+        },
+        {
+          "img": "/img/content/recense_flower_2.png"
+        },
+        {
+          "img": "/img/content/recense_flower_3.png"
+        }
+      ]
+    },
+    {
+      "name": "Ирина В.",
+      "rating": true,
+      "text": "Первый раз делала заказ! Все отлично! Доставили во время! Букет шикарен! Шарики тоже! Сестрёнка в восторге! Спасибо за сервис! Буду заказывать ещё! Всем советую! Первый раз делала заказ! Все отлично! Доставили во время! ...",
+      "show": true,
+      "photos": [
+        {
+          "img": "/img/content/recense_flower_1.png"
+        },
+        {
+          "img": "/img/content/recense_flower_2.png"
+        },
+        {
+          "img": "/img/content/recense_flower_3.png"
+        }
+      ]
+    },
+    {
+      "name": "Ирина В.",
+      "avatar": "/img/content/author.png",
+      "rating": false,
+      "text": "Первый раз делала заказ! Все отлично! Доставили во время! Букет шикарен! Шарики тоже! Сестрёнка в восторге! Спасибо за сервис! Буду заказывать ещё! Всем советую "
+    },
+    {
+      "name": "Ирина В.",
+      "avatar": "/img/content/author.png",
+      "rating": true,
+      "text": "Первый раз делала заказ! Все отлично! Доставили во время! Букет шикарен! Шарики тоже! Сестрёнка в восторге! Спасибо за сервис! Буду заказывать ещё! Всем советую ",
+      "photos": [
+        {
+          "img": "/img/content/recense_flower_1.png"
+        },
+        {
+          "img": "/img/content/recense_flower_2.png"
+        },
+        {
+          "img": "/img/content/recense_flower_3.png"
+        }
+      ]
+    },
+    {
+      "name": "Ирина В.",
+      "rating": true,
+      "text": "Первый раз делала заказ! Все отлично! Доставили во время! Букет шикарен! Шарики тоже! Сестрёнка в восторге! Спасибо за сервис! Буду заказывать ещё! Всем советую! Первый раз делала заказ! Все отлично! Доставили во время! ...",
+      "show": true,
+      "photos": [
+        {
+          "img": "/img/content/recense_flower_1.png"
+        },
+        {
+          "img": "/img/content/recense_flower_2.png"
+        },
+        {
+          "img": "/img/content/recense_flower_3.png"
+        }
+      ]
+    },
+    {
+      "name": "Ирина В.",
+      "avatar": "/img/content/author.png",
+      "rating": false,
+      "text": "Первый раз делала заказ! Все отлично! Доставили во время! Букет шикарен! Шарики тоже! Сестрёнка в восторге! Спасибо за сервис! Буду заказывать ещё! Всем советую "
+    },
+    {
+      "name": "Ирина В.",
+      "avatar": "/img/content/author.png",
+      "rating": false,
+      "text": "Первый раз делала заказ! Все отлично! Доставили во время! Букет шикарен! Шарики тоже! Сестрёнка в восторге! Спасибо за сервис! Буду заказывать ещё! Всем советую ",
+      "photos": [
+        {
+          "img": "/img/content/recense_flower_1.png"
+        },
+        {
+          "img": "/img/content/recense_flower_2.png"
+        },
+        {
+          "img": "/img/content/recense_flower_3.png"
+        }
+      ]
+    },
+    {
+      "name": "Ирина В.",
+      "rating": true,
+      "text": "Первый раз делала заказ! Все отлично! Доставили во время! Букет шикарен! Шарики тоже! Сестрёнка в восторге! Спасибо за сервис! Буду заказывать ещё! Всем советую! Первый раз делала заказ! Все отлично! Доставили во время! ...",
+      "show": true,
+      "photos": [
+        {
+          "img": "/img/content/recense_flower_1.png"
+        },
+        {
+          "img": "/img/content/recense_flower_2.png"
+        },
+        {
+          "img": "/img/content/recense_flower_3.png"
+        }
+      ]
+    },
+    {
+      "name": "Ирина В.",
+      "avatar": "/img/content/author.png",
+      "rating": false,
+      "text": "Первый раз делала заказ! Все отлично! Доставили во время! Букет шикарен! Шарики тоже! Сестрёнка в восторге! Спасибо за сервис! Буду заказывать ещё! Всем советую "
+    },
+    {
+      "name": "Ирина В.",
+      "avatar": "/img/content/author.png",
+      "rating": true,
+      "text": "Первый раз делала заказ! Все отлично! Доставили во время! Букет шикарен! Шарики тоже! Сестрёнка в восторге! Спасибо за сервис! Буду заказывать ещё! Всем советую ",
+      "photos": [
+        {
+          "img": "/img/content/recense_flower_1.png"
+        },
+        {
+          "img": "/img/content/recense_flower_2.png"
+        },
+        {
+          "img": "/img/content/recense_flower_3.png"
+        }
+      ]
+    },
+    {
+      "name": "Ирина В.",
+      "rating": true,
+      "text": "Первый раз делала заказ! Все отлично! Доставили во время! Букет шикарен! Шарики тоже! Сестрёнка в восторге! Спасибо за сервис! Буду заказывать ещё! Всем советую! Первый раз делала заказ! Все отлично! Доставили во время! ...",
+      "show": true,
+      "photos": [
+        {
+          "img": "/img/content/recense_flower_1.png"
+        },
+        {
+          "img": "/img/content/recense_flower_2.png"
+        },
+        {
+          "img": "/img/content/recense_flower_3.png"
+        }
+      ]
+    },
+    {
+      "name": "Ирина В.",
+      "avatar": "/img/content/author.png",
+      "rating": false,
+      "text": "Первый раз делала заказ! Все отлично! Доставили во время! Букет шикарен! Шарики тоже! Сестрёнка в восторге! Спасибо за сервис! Буду заказывать ещё! Всем советую "
+    }
+  ],
   "selectBirthDate": {
     "days": [
       {"number":"1"},{"number":"2"},{"number":"3"},{"number":"4"},{"number":"5"},{"number":"6"},

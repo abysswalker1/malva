@@ -1,0 +1,89 @@
+<div class="recense">
+  <div class="recense__head">
+    <h1 class="recense__head-title">Отзывы о нашей работе</h1>
+    <div class="recense__head-all">
+      <button class="recense__head-btn">
+        <svg class="recense__head-btn-icon">
+          <use href="{{assets}}/img/svg-sprite/sprite.svg#lil_white_arrow"></use>
+        </svg>
+      </button>
+      <span class="recense__head-all-text">Смотреть все отзывы</span>
+    </div>
+  </div>
+
+  <div class="recense__list js-recense-swiper">
+    <div class="recense__list-wrapper swiper-wrapper">
+      {{#each main.recenseList}}
+      <div class="recense__list-item swiper-slide">
+        <div class="recense__list-item-person">
+          <div class="recense__list-item-avatar-wrap">
+            {{#if this.avatar}}
+            <img src="{{assets}}{{this.avatar}}" alt="" class="recense__list-item-avatar">
+            {{else}}
+            И.В
+            {{/if}}
+          </div>
+          <div class="recense__list-item-person-text">
+            <h3 class="recense__list-item-person-name">{{this.name}}</h3>
+            <p class="recense__list-item-person-date">23 апреля 2020</p>
+          </div>
+        </div>
+
+        <div class="recense__list-item-rating">
+          <svg class="recense__list-item-rating-star">
+            <use href="{{assets}}/img/svg-sprite/sprite.svg#star"></use>
+          </svg>
+          <svg class="recense__list-item-rating-star">
+            <use href="{{assets}}/img/svg-sprite/sprite.svg#star"></use>
+          </svg>
+          <svg class="recense__list-item-rating-star">
+            <use href="{{assets}}/img/svg-sprite/sprite.svg#star"></use>
+          </svg>
+          <svg class="recense__list-item-rating-star">
+            <use href="{{assets}}/img/svg-sprite/sprite.svg#star"></use>
+          </svg>
+          <svg class="recense__list-item-rating-star {{#if rating}}rating-star-disabled{{/if}}">
+            <use href="{{assets}}/img/svg-sprite/sprite.svg#star"></use>
+          </svg>
+        </div>
+
+        <div class="recense__list-item-text-wrap">
+          <p class="recense__list-item-text {{#if show}}recense-text-show{{/if}}">
+            {{this.text}}
+          </p>
+        </div>
+
+        <div class="recense__list-item-photos">
+          {{#each this.photos}}
+          <img src="{{assets}}{{img}}" alt="" class="recense__list-item-photos-img">
+          {{/each}}
+        </div>
+
+        {{#if show}}
+        <span class="recense__list-item-show">Показать</span>
+        {{/if}}
+
+        <svg class="recense__list-item-quotes">
+          <use href="{{assets}}/img/svg-sprite/sprite.svg#quotes"></use>
+        </svg>
+
+      </div>
+      {{/each}}
+    </div>
+    <div class="recense__list-btn-wrap">
+      <button class="recense__list-btn recense-button-prev">
+        <svg class="recense__list-btn-icon">
+          <use href="{{assets}}/img/svg-sprite/sprite.svg#arrow_forward"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="recense__list-btn-wrap">
+      <button class="recense__list-btn recense-button-next">
+        <svg class="recense__list-btn-icon">
+          <use href="{{assets}}/img/svg-sprite/sprite.svg#arrow_forward"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="recense__list-pagination"></div>
+  </div>
+</div>

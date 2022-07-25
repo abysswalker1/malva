@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- select 2 plugin -->
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/styles/main.css">
+  <title></title>
+</head>
+
+<body>
+</body>
+
+</html>
+<div class="page-wrap">
+  <div class="page-wrap__content">
+    <div class="account">
+      <div class="account__header">
+        <div class="header">
+          <button class="header__logo">
+            <svg class="header__logo-img" viewBox="0 0 100 100">
+              <use href="../assets/img/svg-sprite/sprite.svg#logo">
+            </svg>
+          </button>
+          <div class="header__pannel">
+            <div class="header__pannel-phone">
+              <svg class="header__pannel-phone-icon">
+                <use href="../assets/img/svg-sprite/sprite.svg#phone" viewBox="0 0 16.57 16.61"></use>
+              </svg>
+              <span class="header__pannel-phone-text">+7 (3182) 60-40-50</span>
+            </div>
+            <div class="header__pannel-icons">
+              <button href=# class="header__pannel-icons-btn" type="button">
+                <svg class="header__pannel-icons-btn-icon">
+                  <use href="../assets/img/svg-sprite/sprite.svg#chat"></use>
+                </svg>
+              </button>
+              <button href=# class="header__pannel-icons-btn" type="button">
+                <svg class="header__pannel-icons-btn-icon">
+                  <use href="../assets/img/svg-sprite/sprite.svg#favs"></use>
+                </svg>
+                <div class="header__pannel-icons-btn-messages"> 3 </div>
+              </button>
+              <button href=# class="header__pannel-icons-btn" type="button">
+                <svg class="header__pannel-icons-btn-icon">
+                  <use href="../assets/img/svg-sprite/sprite.svg#account"></use>
+                </svg>
+              </button>
+              <button href=# class="header__pannel-icons-btn" type="button">
+                <svg class="header__pannel-icons-btn-icon">
+                  <use href="../assets/img/svg-sprite/sprite.svg#basket"></use>
+                </svg>
+                <div class="header__pannel-icons-btn-messages"> 18 </div>
+              </button>
+            </div>
+            <div class="header__pannel-basket">
+              <p class="header__pannel-basket-text"> Корзина </p>
+              <p class="header__pannel-basket-balance"> 6000 <span>$</span>
+              </p>
+            </div>
+            <button href="#" class="header__pannel-burger" type="button">
+              <svg class="header__pannel-burger-icon">
+                <use href="../assets/img/svg-sprite/sprite.svg#menu"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="account__content">
+        <div class="page-links">
+          <span class="page-links__item"> Главная </span>
+          <span class="page-links__item"> 404 </span>
+        </div>
+        <h1 class="account__title">Личный кабинет</h1>
+        <div class="account__pannel js-account-main preview">
+          <div class="account__pannel-head">
+            <img src="../assets/img/main/account_head_bg.png" alt="" class="account__pannel-head-img">
+          </div>
+          <div class="account__banner">
+            <div class="account-banner sale-banner">
+              <div class="account-banner__avatar-wrap">
+                <img src="https://place-hold.it/110x110" alt="" class="account-banner__avatar">
+              </div>
+              <p class="account-banner__name">Здравствуйте, Ирина Валуева!</p>
+              <div class="account-banner__bottom">
+                <div class="banner__circle">
+                  <svg class="banner__circle-icon">
+                    <use href="../assets/img/svg-sprite/sprite.svg#lil_flower"></use>
+                  </svg>
+                </div>
+                <p class="banner__text"> На вашем счету</br>
+                  <span class="banner__text-strong">56</span> бонусных баллов
+                </p>
+                <svg class="banner__flower" viewBox="0 0 75 72">
+                  <use href="../assets/img/svg-sprite/sprite.svg#flower"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="account__back-btn">
+            <div class="button-back-mob">
+              <div class="button-back-mob__circle">
+                <button class="button-back-mob__btn js-account-back-btn" type="button">
+                  <svg class="button-back-mob__icon">
+                    <use href="../assets/img/svg-sprite/sprite.svg#arrow_forward"></use>
+                  </svg>
+                </button>
+              </div>
+              <span class="button-back-mob__text">Назад</span>
+            </div>
+          </div>
+          <div class="account__card">
+            <div class="account__card-item preview-card">
+              <div class="account-preview">
+                <div class="account-preview__vector-wrap">
+                  <svg class="account-preview__vector-flower">
+                    <use href="../assets/img/svg-sprite/sprite.svg#big_flower"></use>
+                  </svg>
+                </div>
+                <div class="account-preview__image-wrap">
+                  <img src="../assets/img/main/big_flower.png" alt="" class="account-preview__image">
+                </div>
+                <div class="account-preview__text-wrap">
+                  <h1 class="account-preview__title"> Мы рады, что вы к нам зашли! </h1>
+                  <p class="account-preview__text"> Здесь вы можете посмотреть ваши недавние заказы, изменить пароль и основную информацию. </p>
+                </div>
+              </div>
+            </div>
+            <div class="account__card-item orders-card">
+              <div class="account-orders js-account-orders current">
+                <div class="account-orders__head">
+                  <button class="account-orders__head-btn js-account-orders-btn" data-id="current" type="button"> Текущие заказы </button>
+                  <button class="account-orders__head-btn js-account-orders-btn" data-id="all" type="button"> Все заказы </button>
+                </div>
+                <div class="account-orders__current">
+                  <p class="account-orders__text"> lorem ipsum dolor sit amet, consectetur </p>
+                  <button class="account-orders__current-button" type="button">
+                    <span class="account-orders__current-button-text">Посмотреть все товары</span>
+                    <svg class="account-orders__current-button-icon">
+                      <use href="../assets/img/svg-sprite/sprite.svg#lil_white_arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="account-orders__all">
+                  <p class="account-orders__text"> lorem ipsum dolor sit amet, consectetur </p>
+                  <div class="account-orders__table">
+                    <div class="account-orders__table-head">
+                      <div class="account-orders__table-head-item">
+                        <p class="account-orders__table-text"> Номер заказа </p>
+                      </div>
+                      <div class="account-orders__table-head-item">
+                        <p class="account-orders__table-text"> Дата оформления </p>
+                      </div>
+                      <div class="account-orders__table-head-item">
+                        <p class="account-orders__table-text"> Сумма </p>
+                      </div>
+                      <div class="account-orders__table-head-item">
+                        <p class="account-orders__table-text"> Статус </p>
+                      </div>
+                    </div>
+                    <div class="account-orders__table-row">
+                      <div class="account-orders__table-row-item">
+                        <p class="account-orders__table-number"> № 123456 </p>
+                      </div>
+                      <div class="account-orders__table-row-item">
+                        <p class="account-orders__table-date"> 28 апреля 2022 </p>
+                      </div>
+                      <div class="account-orders__table-row-item">
+                        <p class="account-orders__table-price"> 1 640 ₽ </p>
+                      </div>
+                      <div class="account-orders__table-row-item">
+                        <p class="account-orders__table-status not-ready"> Оформляется </p>
+                        <p class="account-orders__table-info"> Подробнее </p>
+                      </div>
+                    </div>
+                    <div class="account-orders__table-row">
+                      <div class="account-orders__table-row-item">
+                        <p class="account-orders__table-number"> № 123456 </p>
+                      </div>
+                      <div class="account-orders__table-row-item">
+                        <p class="account-orders__table-date"> 28 апреля 2022 </p>
+                      </div>
+                      <div class="account-orders__table-row-item">
+                        <p class="account-orders__table-price"> 1 640 ₽ </p>
+                      </div>
+                      <div class="account-orders__table-row-item">
+                        <p class="account-orders__table-status finished"> Доставленно </p>
+                        <p class="account-orders__table-info"> Подробнее </p>
+                      </div>
+                    </div>
+                    <div class="account-orders__table-row">
+                      <div class="account-orders__table-row-item">
+                        <p class="account-orders__table-number"> № 123456 </p>
+                      </div>
+                      <div class="account-orders__table-row-item">
+                        <p class="account-orders__table-date"> 28 апреля 2022 </p>
+                      </div>
+                      <div class="account-orders__table-row-item">
+                        <p class="account-orders__table-price"> 1 640 ₽ </p>
+                      </div>
+                      <div class="account-orders__table-row-item">
+                        <p class="account-orders__table-status in-progress"> Ждет отправки </p>
+                        <p class="account-orders__table-info"> Подробнее </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="account-orders__table_mobile">
+                    <div class="account-orders__table_mobile-row">
+                      <div class="account-orders__table_mobile-item">
+                        <p class="account-orders__table-number"> № 123456 </p>
+                        <p class="account-orders__table-price"> 1 640 ₽ </p>
+                      </div>
+                      <div class="account-orders__table_mobile-item">
+                        <p class="account-orders__table-date"> 28 апреля 2022 </p>
+                        <p class="account-orders__table-status not-ready"> Оформляется </p>
+                      </div>
+                      <div class="account-orders__table_mobile-item">
+                        <p class="account-orders__table-info">Подробнее</p>
+                      </div>
+                    </div>
+                    <div class="account-orders__table_mobile-row">
+                      <div class="account-orders__table_mobile-item">
+                        <p class="account-orders__table-number"> № 123456 </p>
+                        <p class="account-orders__table-price"> 1 640 ₽ </p>
+                      </div>
+                      <div class="account-orders__table_mobile-item">
+                        <p class="account-orders__table-date"> 28 апреля 2022 </p>
+                        <p class="account-orders__table-status finished"> Доставленно </p>
+                      </div>
+                      <div class="account-orders__table_mobile-item">
+                        <p class="account-orders__table-info">Подробнее</p>
+                      </div>
+                    </div>
+                    <div class="account-orders__table_mobile-row">
+                      <div class="account-orders__table_mobile-item">
+                        <p class="account-orders__table-number"> № 123456 </p>
+                        <p class="account-orders__table-price"> 1 640 ₽ </p>
+                      </div>
+                      <div class="account-orders__table_mobile-item">
+                        <p class="account-orders__table-date"> 28 апреля 2022 </p>
+                        <p class="account-orders__table-status in-progress"> Ждет отправки </p>
+                      </div>
+                      <div class="account-orders__table_mobile-item">
+                        <p class="account-orders__table-info">Подробнее</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="account__card-item personal-card">
+              <div class="account-personal">
+                <p class="account-personal__text">Вы в любой момент можете обновить вашу учетную запись и внести любые изменения в приведенные ниже данные.</p>
+                <h1 class="account-personal__title">Персональная информация</h1>
+                <div class="account-personal__main">
+                  <label class="account-personal__photo" for="add-photo">
+                    <div class="account-personal__photo-circle">
+                      <svg class="account-personal__photo-icon">
+                        <use href="../assets/img/svg-sprite/sprite.svg#personal"></use>
+                      </svg>
+                      <button id="add-photo" class="account-personal__photo-overlay" type="button">
+                        <svg class="account-personal__photo-icon">
+                          <use href="../assets/img/svg-sprite/sprite.svg#photo"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="account-personal__photo-text"> Загрузите вашу фотографию </div>
+                  </label>
+                  <div class="account-personal__form">
+                    <div class="account-personal__form-row">
+                      <label for="" class="account-personal__form-row-item">
+                        <p class="account-personal__form-text">Имя *</p>
+                        <div class="account-personal__form-input-wrap">
+                          <input type="text" class="account-personal__form-input">
+                        </div>
+                      </label>
+                      <label for="" class="account-personal__form-row-item">
+                        <p class="account-personal__form-text">Фамилия *</p>
+                        <div class="account-personal__form-input-wrap">
+                          <input type="text" class="account-personal__form-input">
+                        </div>
+                      </label>
+                    </div>
+                    <div class="account-personal__form-row">
+                      <label for="" class="account-personal__form-row-item">
+                        <p class="account-personal__form-text">Номер телефона *</p>
+                        <div class="account-personal__form-input-wrap">
+                          <input type="text" class="account-personal__form-input">
+                        </div>
+                      </label>
+                      <label for="" class="account-personal__form-row-item">
+                        <p class="account-personal__form-text">E-mail *</p>
+                        <div class="account-personal__form-input-wrap">
+                          <input type="text" class="account-personal__form-input">
+                        </div>
+                      </label>
+                    </div>
+                    <div class="account-personal__form-row">
+                      <label for="days" class="account-personal__form-row-item">
+                        <p class="account-personal__form-text">Дата рождения <span class="birth-date-span">(дд/мм/гггг)</span></p>
+                        <div class="account-personal__form-birth-date-select">
+                          <div class="account-personal__form-select-wrap">
+                            <select name="select-days" id="days" class="js-standard-select">
+                              <option value=1>1</option>
+                              <option value=2>2</option>
+                              <option value=3>3</option>
+                              <option value=4>4</option>
+                              <option value=5>5</option>
+                              <option value=6>6</option>
+                              <option value=7>7</option>
+                              <option value=8>8</option>
+                              <option value=9>9</option>
+                              <option value=10>10</option>
+                              <option value=11>11</option>
+                              <option value=12>12</option>
+                              <option value=13>13</option>
+                              <option value=14>14</option>
+                              <option value=15>15</option>
+                              <option value=16>16</option>
+                              <option value=17>17</option>
+                              <option value=18>18</option>
+                              <option value=19>19</option>
+                              <option value=20>20</option>
+                              <option value=21>21</option>
+                              <option value=22>22</option>
+                              <option value=23>23</option>
+                              <option value=24>24</option>
+                              <option value=25>25</option>
+                              <option value=26>26</option>
+                              <option value=27>27</option>
+                              <option value=28>28</option>
+                              <option value=29>29</option>
+                              <option value=30>30</option>
+                              <option value=31>31</option>
+                            </select>
+                          </div>
+                          <div class="account-personal__form-select-wrap">
+                            <select name="select-mounth" id="month" class="js-standard-select">
+                              <option value=январь>январь</option>
+                              <option value=февраль>февраль</option>
+                              <option value=март>март</option>
+                              <option value=апрель>апрель</option>
+                              <option value=май>май</option>
+                              <option value=июнь>июнь</option>
+                              <option value=июль>июль</option>
+                              <option value=август>август</option>
+                              <option value=сентябрь>сентябрь</option>
+                              <option value=октябрь>октябрь</option>
+                              <option value=ноябрь>ноябрь</option>
+                              <option value=декабрь>декабрь</option>
+                            </select>
+                          </div>
+                          <div class="account-personal__form-select-wrap">
+                            <select name="select-years" id="years" class="js-standard-select">
+                              <option value=1990>1990</option>
+                              <option value=1991>1991</option>
+                              <option value=1992>1992</option>
+                              <option value=1993>1993</option>
+                              <option value=1994>1994</option>
+                              <option value=1995>1995</option>
+                              <option value=1996>1996</option>
+                              <option value=1997>1997</option>
+                              <option value=1998>1998</option>
+                              <option value=1999>1999</option>
+                              <option value=2000>2000</option>
+                              <option value=2001>2001</option>
+                              <option value=2002>2002</option>
+                              <option value=2003>2003</option>
+                              <option value=2004>2004</option>
+                              <option value=2005>2005</option>
+                              <option value=2006>2006</option>
+                              <option value=2007>2007</option>
+                              <option value=2008>2008</option>
+                              <option value=2009>2009</option>
+                              <option value=2010>2010</option>
+                            </select>
+                          </div>
+                        </div>
+                      </label>
+                      <div class="account-personal__form-btn-wrap">
+                        <button class="account-personal__form-btn"> Сохранить изменения </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="account-personal__password">
+                  <div class="account-personal__password-change">
+                    <h1 class="account-personal__title">Изменение пароля</h1>
+                    <div class="account-personal__password-change-item">
+                      <p class="account-personal__password-text">Текущий пароль</p>
+                      <div class="account-personal__password-input-wrap">
+                        <input type="password" class="account-personal__password-input">
+                      </div>
+                    </div>
+                    <div class="account-personal__password-change-item">
+                      <p class="account-personal__password-text">Новый пароль</p>
+                      <div class="account-personal__password-input-wrap">
+                        <input type="password" class="account-personal__password-input">
+                      </div>
+                    </div>
+                    <div class="account-personal__password-change-item">
+                      <p class="account-personal__password-text">Подтверждение нового пароля</p>
+                      <div class="account-personal__password-input-wrap">
+                        <input type="password" class="account-personal__password-input">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="account-personal__password-save">
+                    <div class="account-personal__password-save-container">
+                      <p class="account-personal__password-save-text"> Пароль должен содержать не менее восьми символов. Это может быть любая комбинация букв латинского алфавита, цифр и других символов. </p>
+                      <button class="account-personal__password-save-btn" type="button"> Сохранить изменения </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="account-personal__bonuses">
+                  <h1 class="account-personal__title">Мои бонусы</h1>
+                  <p class="account-personal__text">История начисления бонусов</p>
+                  <div class="account-personal__bonuses-table">
+                    <div class="account-personal__bonuses-table-head">
+                      <div class="account-personal__bonuses-table-head-item">
+                        <p class="account-personal__bonuses-table-text"> Номер заказа </p>
+                      </div>
+                      <div class="account-personal__bonuses-table-head-item">
+                        <p class="account-personal__bonuses-table-text"> Дата оформления </p>
+                      </div>
+                      <div class="account-personal__bonuses-table-head-item">
+                        <p class="account-personal__bonuses-table-text"> Сумма </p>
+                        <p class="account-personal__bonuses-table-text"> Статус </p>
+                      </div>
+                    </div>
+                    <div class="account-personal__bonuses-table-row">
+                      <div class="account-personal__bonuses-table-row-item">
+                        <p class="account-personal__bonuses-table-number"> № 123456 </p>
+                      </div>
+                      <div class="account-personal__bonuses-table-row-item">
+                        <p class="account-personal__bonuses-table-date"> 28 апреля 2022 </p>
+                      </div>
+                      <div class="account-personal__bonuses-table-row-item">
+                        <p class="account-personal__bonuses-table-price"> 1 640 ₽ </p>
+                        <p class="account-personal__bonuses-table-quantity"> + 50 бонусов </p>
+                      </div>
+                    </div>
+                    <div class="account-personal__bonuses-table-row">
+                      <div class="account-personal__bonuses-table-row-item">
+                        <p class="account-personal__bonuses-table-number"> № 123456 </p>
+                      </div>
+                      <div class="account-personal__bonuses-table-row-item">
+                        <p class="account-personal__bonuses-table-date"> 28 апреля 2022 </p>
+                      </div>
+                      <div class="account-personal__bonuses-table-row-item">
+                        <p class="account-personal__bonuses-table-price"> 1 640 ₽ </p>
+                        <p class="account-personal__bonuses-table-quantity"> + 50 бонусов </p>
+                      </div>
+                    </div>
+                    <div class="account-personal__bonuses-table-row">
+                      <div class="account-personal__bonuses-table-row-item">
+                        <p class="account-personal__bonuses-table-number"> № 123456 </p>
+                      </div>
+                      <div class="account-personal__bonuses-table-row-item">
+                        <p class="account-personal__bonuses-table-date"> 28 апреля 2022 </p>
+                      </div>
+                      <div class="account-personal__bonuses-table-row-item">
+                        <p class="account-personal__bonuses-table-price"> 1 640 ₽ </p>
+                        <p class="account-personal__bonuses-table-quantity"> + 50 бонусов </p>
+                      </div>
+                    </div>
+                    <div class="account-personal__bonuses-table-row">
+                      <div class="account-personal__bonuses-table-row-item">
+                        <p class="account-personal__bonuses-table-number"> № 123456 </p>
+                      </div>
+                      <div class="account-personal__bonuses-table-row-item">
+                        <p class="account-personal__bonuses-table-date"> 28 апреля 2022 </p>
+                      </div>
+                      <div class="account-personal__bonuses-table-row-item">
+                        <p class="account-personal__bonuses-table-price"> 1 640 ₽ </p>
+                        <p class="account-personal__bonuses-table-quantity"> + 50 бонусов </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="account-personal__bonuses-table_mobile">
+                    <div class="account-personal__bonuses-table_mobile-row">
+                      <div class="account-personal__bonuses-table_mobile-item">
+                        <p class="account-personal__bonuses-table-number"> № 123456 </p>
+                        <p class="account-personal__bonuses-table-price"> 1 640 ₽ </p>
+                      </div>
+                      <div class="account-personal__bonuses-table_mobile-item">
+                        <p class="account-personal__bonuses-table-date"> 28 апреля 2022 </p>
+                        <p class="account-personal__bonuses-table-quantity"> + 50 бонусов </p>
+                      </div>
+                      <div class="account-personal__bonuses-table_mobile-item">
+                        <p class="account-personal__bonuses-table-info">Подробнее</p>
+                      </div>
+                    </div>
+                    <div class="account-personal__bonuses-table_mobile-row">
+                      <div class="account-personal__bonuses-table_mobile-item">
+                        <p class="account-personal__bonuses-table-number"> № 123456 </p>
+                        <p class="account-personal__bonuses-table-price"> 1 640 ₽ </p>
+                      </div>
+                      <div class="account-personal__bonuses-table_mobile-item">
+                        <p class="account-personal__bonuses-table-date"> 28 апреля 2022 </p>
+                        <p class="account-personal__bonuses-table-quantity"> + 50 бонусов </p>
+                      </div>
+                      <div class="account-personal__bonuses-table_mobile-item">
+                        <p class="account-personal__bonuses-table-info">Подробнее</p>
+                      </div>
+                    </div>
+                    <div class="account-personal__bonuses-table_mobile-row">
+                      <div class="account-personal__bonuses-table_mobile-item">
+                        <p class="account-personal__bonuses-table-number"> № 123456 </p>
+                        <p class="account-personal__bonuses-table-price"> 1 640 ₽ </p>
+                      </div>
+                      <div class="account-personal__bonuses-table_mobile-item">
+                        <p class="account-personal__bonuses-table-date"> 28 апреля 2022 </p>
+                        <p class="account-personal__bonuses-table-quantity"> + 50 бонусов </p>
+                      </div>
+                      <div class="account-personal__bonuses-table_mobile-item">
+                        <p class="account-personal__bonuses-table-info">Подробнее</p>
+                      </div>
+                    </div>
+                    <div class="account-personal__bonuses-table_mobile-row">
+                      <div class="account-personal__bonuses-table_mobile-item">
+                        <p class="account-personal__bonuses-table-number"> № 123456 </p>
+                        <p class="account-personal__bonuses-table-price"> 1 640 ₽ </p>
+                      </div>
+                      <div class="account-personal__bonuses-table_mobile-item">
+                        <p class="account-personal__bonuses-table-date"> 28 апреля 2022 </p>
+                        <p class="account-personal__bonuses-table-quantity"> + 50 бонусов </p>
+                      </div>
+                      <div class="account-personal__bonuses-table_mobile-item">
+                        <p class="account-personal__bonuses-table-info">Подробнее</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="account-personal__notification">
+                    <div class="account-personal__notification-item">
+                      <h1 class="account-personal__notification-title">Настроить уведомления</h1>
+                      <p class="account-personal__notification-text">Получение информации о заказе</p>
+                      <div class="account-personal__notification-switch-wrap">
+                        <label class="switch">
+                          <input type="checkbox">
+                          <span class="slider round"></span>
+                        </label> <span class="account-personal__notification-switch-text">Мессенджер</span>
+                      </div>
+                      <div class="account-personal__notification-switch-wrap">
+                        <label class="switch">
+                          <input type="checkbox">
+                          <span class="slider round"></span>
+                        </label> <span class="account-personal__notification-switch-text">Звонок</span>
+                      </div>
+                      <svg class="account-personal__notification-flower">
+                        <use href="../assets/img/svg-sprite/sprite.svg#logo_flower"></use>
+                      </svg>
+                    </div>
+                    <div class="account-personal__notification-item">
+                      <h1 class="account-personal__notification-title">Подписка на рассылку</h1>
+                      <p class="account-personal__notification-text">Информация о скидках, акциях, новинках</p>
+                      <div class="account-personal__notification-switch-wrap">
+                        <label class="switch">
+                          <input type="checkbox">
+                          <span class="slider round"></span>
+                        </label> <span class="account-personal__notification-switch-text">Участвовать в рассылке</span>
+                      </div>
+                      <svg class="account-personal__notification-flower">
+                        <use href="../assets/img/svg-sprite/sprite.svg#logo_flower"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="account__card-item location-card">
+              <div class="account-location">
+                <h1 class="account-location__title">Мои адреса</h1>
+                <div class="account-location__list">
+                  <button class="account-location__list-add" type="button">
+                    <svg class="account-location__list-add-icon">
+                      <use href="../assets/img/svg-sprite/sprite.svg#add_location"></use>
+                    </svg> Добавить новый адрес </button>
+                  <div class="account-location__list-item">
+                    <p class="account-location__list-item-title">Дом</p>
+                    <p class="account-location__list-item-address"> г. Омск, ул. Куйбышева, д. 123, корпус 4, кв. 56 </p>
+                    <button class="account-location__list-item-btn" type="button">
+                      <svg class="account-location__list-item-icon">
+                        <use href="../assets/img/svg-sprite/sprite.svg#show"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="account-location__list-item">
+                    <p class="account-location__list-item-title">Дом</p>
+                    <p class="account-location__list-item-address"> г. Омск, ул. Куйбышева, д. 123, корпус 4, кв. 56 </p>
+                    <button class="account-location__list-item-btn" type="button">
+                      <svg class="account-location__list-item-icon">
+                        <use href="../assets/img/svg-sprite/sprite.svg#show"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="account-location__list-item">
+                    <p class="account-location__list-item-title">Дом</p>
+                    <p class="account-location__list-item-address"> г. Омск, ул. Куйбышева, д. 123, корпус 4, кв. 56 </p>
+                    <button class="account-location__list-item-btn" type="button">
+                      <svg class="account-location__list-item-icon">
+                        <use href="../assets/img/svg-sprite/sprite.svg#show"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="account-location__list-item">
+                    <p class="account-location__list-item-title">Дом</p>
+                    <p class="account-location__list-item-address"> г. Омск, ул. Куйбышева, д. 123, корпус 4, кв. 56 </p>
+                    <button class="account-location__list-item-btn" type="button">
+                      <svg class="account-location__list-item-icon">
+                        <use href="../assets/img/svg-sprite/sprite.svg#show"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="account-location__list-item">
+                    <p class="account-location__list-item-title">Дом</p>
+                    <p class="account-location__list-item-address"> г. Омск, ул. Куйбышева, д. 123, корпус 4, кв. 56 </p>
+                    <button class="account-location__list-item-btn" type="button">
+                      <svg class="account-location__list-item-icon">
+                        <use href="../assets/img/svg-sprite/sprite.svg#show"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="account-location__list-item">
+                    <p class="account-location__list-item-title">Дом</p>
+                    <p class="account-location__list-item-address"> г. Омск, ул. Куйбышева, д. 123, корпус 4, кв. 56 </p>
+                    <button class="account-location__list-item-btn" type="button">
+                      <svg class="account-location__list-item-icon">
+                        <use href="../assets/img/svg-sprite/sprite.svg#show"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="account__card-item favs-card">
+              <div class="account-favs">
+                <div class="products-item-wrap ">
+                  <div class="products-item products-item_disabled">
+                    <button class="products-item__btn products-favs-btn">
+                      <svg class="products-item__btn-icon" width="20" height="18">
+                        <use href="../assets/img/svg-sprite/sprite.svg#favs"></use>
+                      </svg>
+                    </button>
+                    <button class="products-item__btn products-basket-btn">
+                      <svg class="products-item__btn-icon" width="20" height="22">
+                        <use href="../assets/img/svg-sprite/sprite.svg#basket_white"></use>
+                      </svg>
+                    </button>
+                    <div class="products-item__img-slider js-img-swiper">
+                      <div class="swiper-wrapper">
+                        <div class="products-item__img-wrap swiper-slide">
+                          <img src='../assets/img/content/content_img_1.jpg' alt="" class="products-item__img">
+                        </div>
+                        <div class="products-item__img-wrap swiper-slide">
+                          <img src='../assets/img/content/content_img_2.jpg' alt="" class="products-item__img">
+                        </div>
+                        <div class="products-item__img-wrap swiper-slide">
+                          <img src='../assets/img/content/content_img_3.jpg' alt="" class="products-item__img">
+                        </div>
+                        <div class="products-item__img-wrap swiper-slide">
+                          <img src='../assets/img/content/content_img_4.jpg' alt="" class="products-item__img">
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                    <p class="products-item__title">Букет</p>
+                    <p class="products-item__description">lorem ipsum dolor sit amet, consectet</p>
+                    <div class="products-item__bottom">
+                      <span class="products-item__rating">
+                        <svg class="products-item__rating-icon">
+                          <use href='../assets/img/svg-sprite/sprite.svg#star'></use>
+                        </svg> 4,5 / 5 </span>
+                      <span class="products-item__price">3800₽</span>
+                    </div>
+                  </div>
+                  <div class="products-item__overlay">
+                    <svg class="products-item__overlay-icon">
+                      <use href="../assets/img/svg-sprite/sprite.svg#stop"></use>
+                    </svg>
+                    <p class="products-item__overlay-text"> Товар больше недоступен </p>
+                  </div>
+                </div>
+                <div class="products-item-wrap ">
+                  <div class="products-item products-item_disabled">
+                    <button class="products-item__btn products-favs-btn">
+                      <svg class="products-item__btn-icon" width="20" height="18">
+                        <use href="../assets/img/svg-sprite/sprite.svg#favs"></use>
+                      </svg>
+                    </button>
+                    <button class="products-item__btn products-basket-btn">
+                      <svg class="products-item__btn-icon" width="20" height="22">
+                        <use href="../assets/img/svg-sprite/sprite.svg#basket_white"></use>
+                      </svg>
+                    </button>
+                    <div class="products-item__img-slider js-img-swiper">
+                      <div class="swiper-wrapper">
+                        <div class="products-item__img-wrap swiper-slide">
+                          <img src='../assets/img/content/content_img_1.jpg' alt="" class="products-item__img">
+                        </div>
+                        <div class="products-item__img-wrap swiper-slide">
+                          <img src='../assets/img/content/content_img_2.jpg' alt="" class="products-item__img">
+                        </div>
+                        <div class="products-item__img-wrap swiper-slide">
+                          <img src='../assets/img/content/content_img_3.jpg' alt="" class="products-item__img">
+                        </div>
+                        <div class="products-item__img-wrap swiper-slide">
+                          <img src='../assets/img/content/content_img_4.jpg' alt="" class="products-item__img">
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                    <p class="products-item__title">Букет</p>
+                    <p class="products-item__description">lorem ipsum dolor sit amet, consectet</p>
+                    <div class="products-item__bottom">
+                      <span class="products-item__rating">
+                        <svg class="products-item__rating-icon">
+                          <use href='../assets/img/svg-sprite/sprite.svg#star'></use>
+                        </svg> 4,5 / 5 </span>
+                      <span class="products-item__price">3800₽</span>
+                    </div>
+                  </div>
+                  <div class="products-item__overlay">
+                    <svg class="products-item__overlay-icon">
+                      <use href="../assets/img/svg-sprite/sprite.svg#stop"></use>
+                    </svg>
+                    <p class="products-item__overlay-text"> Товар больше недоступен </p>
+                  </div>
+                </div>
+                <div class="products-item-wrap ">
+                  <div class="products-item ">
+                    <div class="products-item__marker" style="background: #8164CD"> Хит </div>
+                    <button class="products-item__btn products-favs-btn">
+                      <svg class="products-item__btn-icon" width="20" height="18">
+                        <use href="../assets/img/svg-sprite/sprite.svg#favs"></use>
+                      </svg>
+                    </button>
+                    <button class="products-item__btn products-basket-btn">
+                      <svg class="products-item__btn-icon" width="20" height="22">
+                        <use href="../assets/img/svg-sprite/sprite.svg#basket_white"></use>
+                      </svg>
+                    </button>
+                    <div class="products-item__img-slider js-img-swiper">
+                      <div class="swiper-wrapper">
+                        <div class="products-item__img-wrap swiper-slide">
+                          <img src='../assets/img/content/content_img_1.jpg' alt="" class="products-item__img">
+                        </div>
+                        <div class="products-item__img-wrap swiper-slide">
+                          <img src='../assets/img/content/content_img_2.jpg' alt="" class="products-item__img">
+                        </div>
+                        <div class="products-item__img-wrap swiper-slide">
+                          <img src='../assets/img/content/content_img_3.jpg' alt="" class="products-item__img">
+                        </div>
+                        <div class="products-item__img-wrap swiper-slide">
+                          <img src='../assets/img/content/content_img_4.jpg' alt="" class="products-item__img">
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                    <p class="products-item__title">Букет</p>
+                    <p class="products-item__description">lorem ipsum dolor sit amet, consectet</p>
+                    <div class="products-item__bottom">
+                      <span class="products-item__rating">
+                        <svg class="products-item__rating-icon">
+                          <use href='../assets/img/svg-sprite/sprite.svg#star'></use>
+                        </svg> 4,5 / 5 </span>
+                      <span class="products-item__price">3800₽</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="products-item-wrap ">
+                  <div class="products-item ">
+                    <div class="products-item__marker" style="background: #00A7B5"> Новинка </div>
+                    <button class="products-item__btn products-favs-btn">
+                      <svg class="products-item__btn-icon" width="20" height="18">
+                        <use href="../assets/img/svg-sprite/sprite.svg#favs"></use>
+                      </svg>
+                    </button>
+                    <button class="products-item__btn products-basket-btn">
+                      <svg class="products-item__btn-icon" width="20" height="22">
+                        <use href="../assets/img/svg-sprite/sprite.svg#basket_white"></use>
+                      </svg>
+                    </button>
+                    <div class="products-item__img-slider js-img-swiper">
+                      <div class="swiper-wrapper">
+                        <div class="products-item__img-wrap swiper-slide">
+                          <img src='../assets/img/content/content_img_1.jpg' alt="" class="products-item__img">
+                        </div>
+                        <div class="products-item__img-wrap swiper-slide">
+                          <img src='../assets/img/content/content_img_2.jpg' alt="" class="products-item__img">
+                        </div>
+                        <div class="products-item__img-wrap swiper-slide">
+                          <img src='../assets/img/content/content_img_3.jpg' alt="" class="products-item__img">
+                        </div>
+                        <div class="products-item__img-wrap swiper-slide">
+                          <img src='../assets/img/content/content_img_4.jpg' alt="" class="products-item__img">
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                    <p class="products-item__title">Букет</p>
+                    <p class="products-item__description">lorem ipsum dolor sit amet, consectet</p>
+                    <div class="products-item__bottom">
+                      <span class="products-item__rating">
+                        <svg class="products-item__rating-icon">
+                          <use href='../assets/img/svg-sprite/sprite.svg#star'></use>
+                        </svg> 4,5 / 5 </span>
+                      <span class="products-item__price">3800₽</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="products-item-wrap ">
+                  <div class="products-item ">
+                    <div class="products-item__marker" style="background: #A96D8E"> Акция </div>
+                    <button class="products-item__btn products-favs-btn">
+                      <svg class="products-item__btn-icon" width="20" height="18">
+                        <use href="../assets/img/svg-sprite/sprite.svg#favs"></use>
+                      </svg>
+                    </button>
+                    <button class="products-item__btn products-basket-btn">
+                      <svg class="products-item__btn-icon" width="20" height="22">
+                        <use href="../assets/img/svg-sprite/sprite.svg#basket_white"></use>
+                      </svg>
+                    </button>
+                    <div class="products-item__img-slider js-img-swiper">
+                      <div class="swiper-wrapper">
+                        <div class="products-item__img-wrap swiper-slide">
+                          <img src='../assets/img/content/content_img_1.jpg' alt="" class="products-item__img">
+                        </div>
+                        <div class="products-item__img-wrap swiper-slide">
+                          <img src='../assets/img/content/content_img_2.jpg' alt="" class="products-item__img">
+                        </div>
+                        <div class="products-item__img-wrap swiper-slide">
+                          <img src='../assets/img/content/content_img_3.jpg' alt="" class="products-item__img">
+                        </div>
+                        <div class="products-item__img-wrap swiper-slide">
+                          <img src='../assets/img/content/content_img_4.jpg' alt="" class="products-item__img">
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                    <p class="products-item__title">Букет</p>
+                    <p class="products-item__description">lorem ipsum dolor sit amet, consectet</p>
+                    <div class="products-item__bottom">
+                      <span class="products-item__rating">
+                        <svg class="products-item__rating-icon">
+                          <use href='../assets/img/svg-sprite/sprite.svg#star'></use>
+                        </svg> 4,5 / 5 </span>
+                      <span class="products-item__price">3800₽</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="products-item-wrap ">
+                  <div class="products-item ">
+                    <div class="products-item__marker" style="background: #8164CD"> Хит </div>
+                    <button class="products-item__btn products-favs-btn">
+                      <svg class="products-item__btn-icon" width="20" height="18">
+                        <use href="../assets/img/svg-sprite/sprite.svg#favs"></use>
+                      </svg>
+                    </button>
+                    <button class="products-item__btn products-basket-btn">
+                      <svg class="products-item__btn-icon" width="20" height="22">
+                        <use href="../assets/img/svg-sprite/sprite.svg#basket_white"></use>
+                      </svg>
+                    </button>
+                    <div class="products-item__img-slider js-img-swiper">
+                      <div class="swiper-wrapper">
+                        <div class="products-item__img-wrap swiper-slide">
+                          <img src='../assets/img/content/content_img_1.jpg' alt="" class="products-item__img">
+                        </div>
+                        <div class="products-item__img-wrap swiper-slide">
+                          <img src='../assets/img/content/content_img_2.jpg' alt="" class="products-item__img">
+                        </div>
+                        <div class="products-item__img-wrap swiper-slide">
+                          <img src='../assets/img/content/content_img_3.jpg' alt="" class="products-item__img">
+                        </div>
+                        <div class="products-item__img-wrap swiper-slide">
+                          <img src='../assets/img/content/content_img_4.jpg' alt="" class="products-item__img">
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                    <p class="products-item__title">Букет</p>
+                    <p class="products-item__description">lorem ipsum dolor sit amet, consectet</p>
+                    <div class="products-item__bottom">
+                      <span class="products-item__rating">
+                        <svg class="products-item__rating-icon">
+                          <use href='../assets/img/svg-sprite/sprite.svg#star'></use>
+                        </svg> 4,5 / 5 </span>
+                      <span class="products-item__price">3800₽</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="products-item-wrap ">
+                  <div class="products-item ">
+                    <div class="products-item__marker" style="background: #A96D8E"> Акция </div>
+                    <button class="products-item__btn products-favs-btn">
+                      <svg class="products-item__btn-icon" width="20" height="18">
+                        <use href="../assets/img/svg-sprite/sprite.svg#favs"></use>
+                      </svg>
+                    </button>
+                    <button class="products-item__btn products-basket-btn">
+                      <svg class="products-item__btn-icon" width="20" height="22">
+                        <use href="../assets/img/svg-sprite/sprite.svg#basket_white"></use>
+                      </svg>
+                    </button>
+                    <div class="products-item__img-slider js-img-swiper">
+                      <div class="swiper-wrapper">
+                        <div class="products-item__img-wrap swiper-slide">
+                          <img src='../assets/img/content/content_img_1.jpg' alt="" class="products-item__img">
+                        </div>
+                        <div class="products-item__img-wrap swiper-slide">
+                          <img src='../assets/img/content/content_img_2.jpg' alt="" class="products-item__img">
+                        </div>
+                        <div class="products-item__img-wrap swiper-slide">
+                          <img src='../assets/img/content/content_img_3.jpg' alt="" class="products-item__img">
+                        </div>
+                        <div class="products-item__img-wrap swiper-slide">
+                          <img src='../assets/img/content/content_img_4.jpg' alt="" class="products-item__img">
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                    <p class="products-item__title">Букет</p>
+                    <p class="products-item__description">lorem ipsum dolor sit amet, consectet</p>
+                    <div class="products-item__bottom">
+                      <span class="products-item__rating">
+                        <svg class="products-item__rating-icon">
+                          <use href='../assets/img/svg-sprite/sprite.svg#star'></use>
+                        </svg> 4,5 / 5 </span>
+                      <span class="products-item__price">3800₽</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="products-item-wrap swiper-slide">
+                  <div class="products-item ">
+                    <div class="products-item__marker" style="background: #00A7B5"> Новинка </div>
+                    <button class="products-item__btn products-favs-btn">
+                      <svg class="products-item__btn-icon" width="20" height="18">
+                        <use href="../assets/img/svg-sprite/sprite.svg#favs"></use>
+                      </svg>
+                    </button>
+                    <button class="products-item__btn products-basket-btn">
+                      <svg class="products-item__btn-icon" width="20" height="22">
+                        <use href="../assets/img/svg-sprite/sprite.svg#basket_white"></use>
+                      </svg>
+                    </button>
+                    <div class="products-item__img-slider js-img-swiper">
+                      <div class="swiper-wrapper">
+                        <div class="products-item__img-wrap swiper-slide">
+                          <img src='../assets/img/content/content_img_1.jpg' alt="" class="products-item__img">
+                        </div>
+                        <div class="products-item__img-wrap swiper-slide">
+                          <img src='../assets/img/content/content_img_2.jpg' alt="" class="products-item__img">
+                        </div>
+                        <div class="products-item__img-wrap swiper-slide">
+                          <img src='../assets/img/content/content_img_3.jpg' alt="" class="products-item__img">
+                        </div>
+                        <div class="products-item__img-wrap swiper-slide">
+                          <img src='../assets/img/content/content_img_4.jpg' alt="" class="products-item__img">
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                    <p class="products-item__title">Букет</p>
+                    <p class="products-item__description">lorem ipsum dolor sit amet, consectet</p>
+                    <div class="products-item__bottom">
+                      <span class="products-item__rating">
+                        <svg class="products-item__rating-icon">
+                          <use href='../assets/img/svg-sprite/sprite.svg#star'></use>
+                        </svg> 4,5 / 5 </span>
+                      <span class="products-item__price">3800₽</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="account__sidebar">
+            <button class="account__sidebar-button js-account-button" data-id="orders" type="button">
+              <p class="account__sidebar-button-text">Заказы</p>
+            </button>
+            <button class="account__sidebar-button js-account-button" data-id="personal" type="button">
+              <p class="account__sidebar-button-text">Личные данные</p>
+            </button>
+            <button class="account__sidebar-button js-account-button" data-id="favs" type="button">
+              <p class="account__sidebar-button-text">Избранное</p>
+            </button>
+            <button class="account__sidebar-button js-account-button" data-id="location" type="button">
+              <p class="account__sidebar-button-text">Адреса</p>
+            </button>
+            <button class="account__sidebar-button js-account-button" data-id="preview" type="button">
+              <p class="account__sidebar-button-text">Выйти</p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../assets/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+</body>
+
+</html>
+<div class="footer">
+  <div class="pre-footer">
+    <div class="pre-footer__container">
+      <svg class="pre-footer__logo">
+        <use href="../assets/img/svg-sprite/sprite.svg#logo"></use>
+      </svg>
+      <div class="pre-footer__information">
+        <h1 class="pre-footer__title">Информация</h1>
+        <a class="pre-footer__link" href=#>Адреса магазинов</a>
+        <a class="pre-footer__link" href=#>Акции</a>
+        <a class="pre-footer__link" href=#>Отзывы о нас</a>
+        <a class="pre-footer__link" href=#> Оплата</a>
+        <a class="pre-footer__link" href=#>Доставка</a>
+        <a class="pre-footer__link" href=#>Обмен и возврат</a>
+        <a class="pre-footer__link" href=#>Публичная оферта</a>
+        <a class="pre-footer__link" href=#>Обратная связь</a>
+      </div>
+      <div class="pre-footer__catalog">
+        <h1 class="pre-footer__title">Каталог</h1>
+        <div class="pre-footer__catalog-wrap">
+          <div class="pre-footer__section">
+            <a class="pre-footer__link" href=#>Цветы</a>
+            <a class="pre-footer__link" href=#>Букеты</a>
+            <a class="pre-footer__link" href=#>Композиции</a>
+            <a class="pre-footer__link" href=#> Для свадьбы</a>
+            <a class="pre-footer__link" href=#>Игрушки</a>
+            <a class="pre-footer__link" href=#>Шары</a>
+            <a class="pre-footer__link" href=#>Открытки</a>
+            <a class="pre-footer__link" href=#>Конфеты</a>
+          </div>
+          <div class="pre-footer__section">
+            <a class="pre-footer__link" href=#>Адреса магазинов</a>
+            <a class="pre-footer__link" href=#>Акции</a>
+            <a class="pre-footer__link" href=#>Отзывы о нас</a>
+            <a class="pre-footer__link" href=#> Оплата</a>
+            <a class="pre-footer__link" href=#>Доставка</a>
+            <a class="pre-footer__link" href=#>Обмен и возврат</a>
+            <a class="pre-footer__link" href=#>Публичная оферта</a>
+            <a class="pre-footer__link" href=#>Обратная связь</a>
+          </div>
+        </div>
+      </div>
+      <div class="pre-footer__contacts">
+        <h1 class="pre-footer__title">Контакты</h1>
+        <div class="pre-footer__contacts-item">
+          <div class="pre-footer__contacts-icon-wrap">
+            <svg class="pre-footer__contacts-icon" width="14" height="14">
+              <use href="../assets/img/svg-sprite/sprite.svg#phone_contacts"></use>
+            </svg>
+          </div>
+          <div class="pre-footer__contacts-text-wrap">
+            <p class="pre-footer__contacts-text">+7 (900) 000-00-00</p>
+            <p class="pre-footer__contacts-text">+7 (3812) 60-40-50</p>
+          </div>
+          <div class="pre-footer__contacts-call-wrap">
+            <svg class="pre-footer__contacts-call">
+              <use href="../assets/img/svg-sprite/sprite.svg#call_1"></use>
+            </svg>
+            <svg class="pre-footer__contacts-call">
+              <use href="../assets/img/svg-sprite/sprite.svg#call_2"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="pre-footer__contacts-item">
+          <div class="pre-footer__contacts-icon-wrap">
+            <svg class="pre-footer__contacts-icon" width="14" height="14">
+              <use href="../assets/img/svg-sprite/sprite.svg#location"></use>
+            </svg>
+          </div>
+          <div class="pre-footer__contacts-text-wrap">
+            <p class="pre-footer__contacts-text">ул. 24 Северная, 145 корпус 8, г. Омск</p>
+          </div>
+        </div>
+        <div class="pre-footer__contacts-item">
+          <div class="pre-footer__contacts-icon-wrap">
+            <svg class="pre-footer__contacts-icon" width="14" height="14">
+              <use href="../assets/img/svg-sprite/sprite.svg#mail"></use>
+            </svg>
+          </div>
+          <div class="pre-footer__contacts-text-wrap">
+            <p class="pre-footer__contacts-text">info@mail.ru</p>
+          </div>
+        </div>
+        <div class="pre-footer__buttons">
+          <button class="pre-footer__buttons-item" type="button">
+            <svg class="pre-footer__buttons-icon" width="20" height="12">
+              <use href="../assets/img/svg-sprite/sprite.svg#vk"></use>
+            </svg>
+          </button>
+          <button class="pre-footer__buttons-item" type="button">
+            <svg class="pre-footer__buttons-icon" width="21" height="22">
+              <use href="../assets/img/svg-sprite/sprite.svg#call_1"></use>
+            </svg>
+          </button>
+          <button class="pre-footer__buttons-item" type="button">
+            <svg class="pre-footer__buttons-icon" width="20" height="20">
+              <use href="../assets/img/svg-sprite/sprite.svg#call_2"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pre-footer__mobile js-footerLinks-item">
+    <div class="pre-footer__mobile-container">
+      <div class="pre-footer__mobile-head js-footerLinks-btn-trigger">
+        <h1 class="pre-footer__title">Каталог</h1>
+        <button class="pre-footer__mobile-btn">
+          <svg class="pre-footer__mobile-icon">
+            <use href="../assets/img/svg-sprite/sprite.svg#arrow_down"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="pre-footer__mobile-list">
+        <a class="pre-footer__link" href=#>Цветы</a>
+        <a class="pre-footer__link" href=#>Букеты</a>
+        <a class="pre-footer__link" href=#>Композиции</a>
+        <a class="pre-footer__link" href=#> Для свадьбы</a>
+        <a class="pre-footer__link" href=#>Игрушки</a>
+        <a class="pre-footer__link" href=#>Шары</a>
+        <a class="pre-footer__link" href=#>Открытки</a>
+        <a class="pre-footer__link" href=#>Конфеты</a>
+      </div>
+    </div>
+  </div>
+  <div class="pre-footer__mobile js-footerLinks-item">
+    <div class="pre-footer__mobile-container">
+      <div class="pre-footer__mobile-head js-footerLinks-btn-trigger">
+        <h1 class="pre-footer__title">Информация</h1>
+        <button class="pre-footer__mobile-btn">
+          <svg class="pre-footer__mobile-icon">
+            <use href="../assets/img/svg-sprite/sprite.svg#arrow_down"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="pre-footer__mobile-list">
+        <a class="pre-footer__link" href=#>Адреса магазинов</a>
+        <a class="pre-footer__link" href=#>Акции</a>
+        <a class="pre-footer__link" href=#>Отзывы о нас</a>
+        <a class="pre-footer__link" href=#> Оплата</a>
+        <a class="pre-footer__link" href=#>Доставка</a>
+        <a class="pre-footer__link" href=#>Обмен и возврат</a>
+        <a class="pre-footer__link" href=#>Публичная оферта</a>
+        <a class="pre-footer__link" href=#>Обратная связь</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-bottom__container">
+      <div class="footer-bottom__left">
+        <span class="footer-bottom__text">© Мальва, 2022</span>
+        <span class="footer-bottom__text">Политика Конфиденциальности</span>
+        <span class="footer-bottom__text">Пользовательское соглашение</span>
+      </div>
+      <div class="footer-bottom__right">
+        <span class="footer-bottom__text">Создание и продвижение</span>
+        <img src="../assets/img/images/main/studio_logo.png" alt="" class="footer-bottom__logo">
+      </div>
+    </div>
+  </div>
+</div>

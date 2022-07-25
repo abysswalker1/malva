@@ -30909,6 +30909,40 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/js/components/recenseSlider.js":
+/*!********************************************!*\
+  !*** ./src/js/components/recenseSlider.js ***!
+  \********************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+
+
+(function () {
+  var swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.js-recense-swiper', {
+    // configure Swiper to use modules
+    modules: [swiper__WEBPACK_IMPORTED_MODULE_0__["Pagination"], swiper__WEBPACK_IMPORTED_MODULE_0__["Navigation"]],
+    direction: 'horizontal',
+    slidesPerView: 3,
+    slidesPerGroup: 3,
+    spaceBetween: 30,
+    loop: false,
+    navigation: {
+      nextEl: '.recense-button-next',
+      prevEl: '.recense-button-prev'
+    },
+    // If we need pagination
+    pagination: {
+      el: '.recense__list-pagination'
+    }
+  });
+})();
+
+/***/ }),
+
 /***/ "./src/js/components/uploadFile.js":
 /*!*****************************************!*\
   !*** ./src/js/components/uploadFile.js ***!
@@ -31091,6 +31125,8 @@ __webpack_require__(/*! ./components/imgSlider */ "./src/js/components/imgSlider
 __webpack_require__(/*! ./components/contactsSlider */ "./src/js/components/contactsSlider.js");
 
 __webpack_require__(/*! ./components/mainSlider */ "./src/js/components/mainSlider.js");
+
+__webpack_require__(/*! ./components/recenseSlider */ "./src/js/components/recenseSlider.js");
 
 __webpack_require__(/*! ./other/select */ "./src/js/other/select.js");
 

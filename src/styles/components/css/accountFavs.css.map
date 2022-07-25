@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAC;EACZ,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,qCAAqC;EAC5D,kBAAkB,EAAE,uBAAuB;EAC3C,QAAQ,EAAE,IAAI;EACd,UAAU,EAAE,MAAM;CACnB",
+    "sources": [
+        "../accountFavs.scss"
+    ],
+    "names": [],
+    "file": "accountFavs.css"
+}
