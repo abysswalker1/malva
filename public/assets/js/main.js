@@ -31194,12 +31194,24 @@ __webpack_require__.r(__webpack_exports__);
     // configure Swiper to use modules
     modules: [swiper__WEBPACK_IMPORTED_MODULE_0__["Pagination"], swiper__WEBPACK_IMPORTED_MODULE_0__["Navigation"]],
     direction: 'horizontal',
-    slidesPerView: 4,
-    spaceBetween: 20,
     loop: false,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
+    },
+    breakpoints: {
+      1280: {
+        slidesPerView: 4,
+        spaceBetween: 28
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      },
+      180: {
+        slidesPerView: 2,
+        spaceBetween: 15
+      }
     },
     // If we need pagination
     pagination: {

@@ -3,10 +3,16 @@
   &__header {
     background: #CEC3EB;
     margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
   }
 
   &__content {
-    @include std-container();
+    position: relative;
+
+    &-container {
+      @include std-container();
+    }
   }
 
   &__title {
@@ -17,4 +23,41 @@
     margin-bottom: 30px;
     margin-top: 20px;
   } 
+
+  &__bg-flower {
+    position: absolute;
+    top: calc(50% - 400px);
+    right: -100px;
+    width: 30vw;
+    height: 500px;
+    z-index: 1;
+    &:last-child {
+      top: auto;
+      bottom: 0;
+      right: auto;
+      left: -100px;
+      transform: scale(-1, 1);
+    }
+  }
+
+  &__bg-leafs {
+    position: absolute;
+    top: -270px;
+    left: 0;
+    height: 712px;
+    width: 20vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blog {
+    &__bg {
+      &-leafs {
+        display: none;
+      }
+      &-flower {
+        display: none;
+      }
+    }
+  }
 }

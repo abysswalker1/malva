@@ -8,13 +8,23 @@
       </div>
       {{> pageLinks main.pageLinksNotFound }}
 
-      <svg>
-        <use href="../assets/img/svg-sprite/sprite.svg#logo_flower"></use>
-      </svg>
-
       <div class="blog__content">
-        <h1 class="blog__title">Интересные статьи</h1>
-        {{> blogList }}
+        <div class="blog__content-container">
+          <h1 class="blog__title">Интересные статьи</h1>
+          {{> blogList }}
+        </div>
+
+        <svg class="blog__bg-leafs"> 
+          <use href="{{assets}}/img/svg-sprite/sprite.svg#leafs"></use>
+        </svg>
+  
+        <svg class="blog__bg-flower">
+          <use href="{{assets}}/img/svg-sprite/sprite.svg#logo_flower_pink"></use>
+        </svg>
+
+        <svg class="blog__bg-flower">
+          <use href="{{assets}}/img/svg-sprite/sprite.svg#logo_flower_pink"></use>
+        </svg>
       </div>
     </div>
   </div>

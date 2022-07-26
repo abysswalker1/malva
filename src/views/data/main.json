@@ -625,35 +625,35 @@
   "team": [
     {
       "name": "Юрий",
-      "image": "{{assets}}/img/content/yuri.jpg"
+      "image": "/img/content/yuri.jpg"
     },
     {
       "name": "Мария",
-      "image": "{{assets}}/img/content/mariya.jpg"
+      "image": "/img/content/mariya.jpg"
     },
     {
       "name": "Анастасия",
-      "image": "{{assets}}/img/content/anastasiya.jpg"
+      "image": "/img/content/anastasiya.jpg"
     },
     {
       "name": "Татьяна ",
-      "image": "{{assets}}/img/content/tatiyana.jpg"
+      "image": "/img/content/tatiyana.jpg"
     },
     {
-      "name": "[name]",
-      "image": "https://place-hold.it/300x280"
+      "name": "Юрий",
+      "image": "/img/content/yuri.jpg"
     },
     {
-      "name": "[name]",
-      "image": "https://place-hold.it/300x280"
+      "name": "Мария",
+      "image": "/img/content/mariya.jpg"
     },
     {
-      "name": "[name]",
-      "image": "https://place-hold.it/300x280"
+      "name": "Анастасия",
+      "image": "/img/content/anastasiya.jpg"
     },
     {
-      "name": "[name]",
-      "image": "https://place-hold.it/300x280"
+      "name": "Татьяна ",
+      "image": "/img/content/tatiyana.jpg"
     }
   ],
   "blogList": [

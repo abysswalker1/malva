@@ -7,6 +7,7 @@
 
   &__content {
     padding-top: 30px;
+    overflow: hidden;
   }
 
   &__main-wrap {
@@ -59,14 +60,6 @@
     position: relative;
     z-index: 2;
   }
-  &__logo-flower {
-    position: absolute;
-    z-index: 1;
-    right: -100px;
-    bottom: -100px;
-    width: 625px;
-    height: 503px;
-  }
   &__btn {
     @include std-button(300px);
     position: relative;
@@ -82,6 +75,16 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__flower {
+    position: absolute;
+    top: 22%;
+    width: 100%;
+    right: -100px;
+    height: 100%;
   }
 
   &__flowers-wrap {
@@ -121,18 +124,22 @@
     background-size: cover;
     margin-bottom: 150px;
     position: relative;
+    height: 400px;
     &-container {
       @include std-container();
-      padding: 0 85px;
-      max-width: 1290px + 40px + 130px;
-      padding-top: 50px;
-      height: 100%;
+    padding-top: 50px;
     }
     &-title {
       font-size: 35px;
       line-height: 40px;
       color: var(--dark-purple);
       @include semibold();
+    }
+    &-mobile-title {
+      display: none;
+    }
+    &-mobile-flower-wrap {
+      display: none;
     }
   }
 
@@ -212,6 +219,17 @@
   }
 }
 
+@media screen and (max-width: 1280px) {
+  .about-us {
+    &__team {
+      height: 340px;
+      &-title {
+        text-align: center;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   .about-us {
     &__main {
@@ -221,8 +239,41 @@
       order: 2;
       margin-top: 30px;
     }
+    &__flower {
+      display: none;
+    }
     &__flowers {
       flex-direction: column;
+    }
+
+    &__team {
+      height: 410px;
+      &-title {
+        display: none;
+      }
+      &-mobile-title {
+        width: 100%;
+        display: inline-block;
+        font-size: 30px;
+        line-height: 50px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #3E0B3D;
+        @include headline();
+      }
+      &-mobile-flower-wrap {
+        display: block;
+        position: absolute;
+        overflow: hidden;
+        bottom: 0;top: 0;right: 0;
+        height: 100%;
+      } 
+      &-mobile-flower {
+        width: 150%;
+        height: 105%;
+        transform: scale(1, -1);
+        transform: rotate(180deg);
+      }
     }
     &__legal {
       &-row {
@@ -252,6 +303,9 @@
   .about-us {
     &__right-side {
       align-items: center;
+    }
+    &__team {
+      height: 286px;
     }
   }
 }

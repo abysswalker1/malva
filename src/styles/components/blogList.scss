@@ -4,6 +4,8 @@
   grid-template-rows: minmax(300, 705px) 415px 415px;
   grid-row-gap: 50px;
   grid-column-gap: 30px;
+  position: relative;
+  z-index: 2;
   &__item {
     text-decoration: none;
     &-title {

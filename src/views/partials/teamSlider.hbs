@@ -1,27 +1,31 @@
-<div class="team-slider js-swiper">
-  
-  <div class="team-slider__wrapper swiper-wrapper">
-    {{#each main.team}}
-    <div class="team-slider__item swiper-slide">
-      <img src="https://place-hold.it/300x280" alt="" class="team-slider__img">
-      <p class="team-slider__name">
-        {{this.name}}
-      </p>
+  <div class="team-slider__container">
+
+     <button class="team-slider__btn swiper-button-prev" type="button">
+        <svg class="team-slider__btn-arrow">
+          <use href="{{assets}}/img/svg-sprite/sprite.svg#lil_white_arrow"></use>
+        </svg>
+      </button>
+
+    <div class="team-slider js-swiper">
+    
+      <div class="team-slider__wrapper swiper-wrapper">
+        {{#each main.team}}
+        <div class="team-slider__item swiper-slide">
+          <div class="team-slider__img-wrap">
+            <img src={{assets}}{{this.image}} alt="" class="team-slider__img">
+          </div>
+          <p class="team-slider__name">
+            {{this.name}}
+          </p>
+        </div>
+        {{/each}}
+      </div>
     </div>
-    {{/each}}
+
+    <button class="team-slider__btn swiper-button-next" type="button">
+      <svg class="team-slider__btn-arrow">
+        <use href="{{assets}}/img/svg-sprite/sprite.svg#lil_white_arrow"></use>
+      </svg>
+    </button>
   </div>
   
-  <button class="team-slider__btn team-slider-next" type="button">
-    <svg class="team-slider__btn-arrow">
-      <use href="{{assets}}/img/svg-sprite/sprite.svg#lil_white_arrow"></use>
-    </svg>
-  </button>
-  <button class="team-slider__btn team-slider-prev" type="button">
-    <svg class="team-slider__btn-arrow">
-      <use href="{{assets}}/img/svg-sprite/sprite.svg#lil_white_arrow"></use>
-    </svg>
-  </button>
-
-</div>
-
-

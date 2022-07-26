@@ -84,7 +84,7 @@
       &-icon {
         width: 12px;
         height: 12px;
-        margin-right: 12px;
+        margin-left: 12px;
       }
     }
   }
@@ -101,6 +101,9 @@
 
 @media screen and (max-width: 476px) {
   .not-found {
+    &__main-wrap {
+
+    }
     &__main-note {
       height: 93px;
       margin-bottom: 15px;
